@@ -4,77 +4,79 @@ import React from "react";
 import FadeInSection from "./FadeInSection";
 
 const PathForBetterWork: React.FC = () => {
-
-
   return (
     <>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
     </style>
 
-    <section  id="how-it-works" className="flex flex-col px-16 pt-24 pb-12 mt-0 w-full bg-sky-300 max-md:px-5 max-md:max-w-full">
-      <div className="max-md:max-w-full">
-        <div className="flex gap-5 max-md:flex-col">
-          <div className="flex flex-col w-2/5 max-md:ml-0 max-md:w-full">
-            <div className="flex flex-col text-center text-white max-md:mt-10 max-md:max-w-full">
+    <section id="how-it-works" className="flex flex-col px-4 sm:px-16 pt-12 sm:pt-24 pb-12 mt-0 w-full bg-sky-300">
+      <div className="max-w-7xl mx-auto">
+        <div className="flex flex-col lg:flex-row gap-5">
+          <div className="flex flex-col w-full lg:w-2/5">
+            <div className="flex flex-col text-center text-white">
               <FadeInSection>
-              <h2  className="text-8xl max-md:max-w-full max-md:text-4xl julius-sans text-left">
-              Why BreezeWear Works:
-              </h2>
+                <h2 className="text-4xl sm:text-6xl lg:text-8xl julius-sans text-left">
+                  Why BreezeWear Works:
+                </h2>
               </FadeInSection>
-              <div className="flex flex-col self-end mt-48 mr-14 max-w-full text-5xl w-[369px] max-md:mt-10 max-md:mr-2.5 max-md:text-4xl">
+              <div className="flex flex-col mt-12 lg:mt-48 max-w-full text-3xl sm:text-4xl lg:text-5xl">
                 <FadeInSection>
-                <p  className="self-end max-md:text-4xl julius-sans">Patented Technology</p>
-                <img
-                src = "https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2Fff661357cf284e9788b3ad1e0c2e10f8" ></img>
+                  <div className="flex flex-col items-center">
+                    <p className="julius-sans mb-4">Patented Technology</p>
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2Fff661357cf284e9788b3ad1e0c2e10f8"
+                      alt="Patented Technology"
+                      className="w-full max-w-[369px]"
+                    />
+                  </div>
                 </FadeInSection>
                 <FadeInSection>
-                <p  className="self-start mt-[271px] max-md:mt-10 max-md:text-4xl julius-sans">
-                  DETACHABLE/<br></br>Washable <br /> fans
-                </p>
-                <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2Fa1f4f9278491485b8297eba6db4fc594"
-                ></img>
+                  <div className="flex flex-col items-center mt-12 lg:mt-[271px]">
+                    <p className="julius-sans mb-4 text-center">
+                      DETACHABLE/<br />Washable <br /> fans
+                    </p>
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2Fa1f4f9278491485b8297eba6db4fc594"
+                      alt="Detachable/Washable fans"
+                      className="w-full max-w-[369px]"
+                    />
+                  </div>
                 </FadeInSection>
-                {/* <FadeInSection>
-                <p className="self-center mt-96 max-md:mt-10 max-md:text-4xl julius-sans">
-                  OPTIMAL COOLING
-                </p>
-                </FadeInSection> */}
               </div>
             </div>
           </div>
-          <div className="flex flex-col ml-5 w-[17%] max-md:ml-0 max-md:w-full">
-            {/* <img
-              loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/54a2c254c7bde881d3e520fa214dfbe350c968773016e5a39267b7df0afa13d8?placeholderIfAbsent=true&apiKey=105f2061e4de4572989bc0746b5c0807"
-              alt="ACC technology illustration"
-              className="object-contain shrink-0 self-stretch my-auto max-w-full aspect-[0.16] rounded-[100px] w-[283px] max-md:mt-10"
-            /> */}
+          <div className="hidden lg:flex flex-col ml-5 w-[17%]">
+            {/* Placeholder for potential future content */}
           </div>
-          <div className="flex flex-col ml-5 w-[42%] max-md:ml-0 max-md:w-full">
-            <div className="flex flex-col grow mt-[187px] max-md:mt-10 max-md:max-w-full">
+          <div className="flex flex-col w-full lg:w-[42%] lg:ml-5">
+            <div className="flex flex-col mt-12 lg:mt-[187px]">
               <FadeInSection>
-              <p className="self-start text-5xl text-center text-white max-md:text-4xl julius-sans">
-                Accelerates <br /> Sweat Evaporation
-              </p>
-              <img
-              src = "https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2F5b9fcdefc01e4e6bada454517973f56a"
-              ></img>
+                <div className="flex flex-col items-center">
+                  <p className="text-3xl sm:text-4xl lg:text-5xl text-center text-white julius-sans mb-4">
+                    Accelerates <br /> Sweat Evaporation
+                  </p>
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2F5b9fcdefc01e4e6bada454517973f56a"
+                    alt="Accelerates Sweat Evaporation"
+                    className="w-full max-w-[500px]"
+                  />
+                </div>
               </FadeInSection>
               
-              <div className="flex flex-col pl-1.5 mt-56 w-full max-md:mt-10 max-md:max-w-full">
+              <div className="flex flex-col mt-12 lg:mt-56 w-full">
                 <FadeInSection>
-                <p className="self-start ml-3.5 text-5xl text-center text-white max-md:ml-2.5 max-md:text-4xl julius-sans">
-                  ENHANCED AIRFLOW
-                </p>
-                <img
-                src = "https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2Fda27a00e857542c1a94b83cf81a4075d"
-                ></img>
+                  <div className="flex flex-col items-center">
+                    <p className="text-3xl sm:text-4xl lg:text-5xl text-center text-white julius-sans mb-4">
+                      ENHANCED AIRFLOW
+                    </p>
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2Fda27a00e857542c1a94b83cf81a4075d"
+                      alt="Enhanced Airflow"
+                      className="w-full max-w-[500px]"
+                    />
+                  </div>
                 </FadeInSection>
-                <div className="flex flex-wrap gap-10 mt-80 max-md:mt-10 max-md:max-w-full">
-                  <div className="flex flex-col grow shrink-0 basis-0 w-fit max-md:max-w-full" />
-                </div>
               </div>
             </div>
           </div>
