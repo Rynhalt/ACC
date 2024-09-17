@@ -22,7 +22,7 @@ const GuaranteedImprovement: React.FC = () => {
       <FadeInSection>
       <img
         loading="lazy"
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/e1f94e8e92393f77c51d111785f845d5903b27bce9debd54cf41f7080d3e689c?placeholderIfAbsent=true&apiKey=105f2061e4de4572989bc0746b5c0807"
+        src="https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2Fa7a2225a348f474e843be348fb59e102"
         alt="Construction improvement illustration"
         className="object-contain mt-0 ml-11 max-w-full rounded-none aspect-[0.72] w-[599px] max-md:mt-0"
       />
@@ -34,7 +34,7 @@ const GuaranteedImprovement: React.FC = () => {
             <FadeInSection>
             <img
               loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/205c6c6598b6ac26bf474806c97286c4758e7768c096ea1c7d8624cc9b1c4d20?placeholderIfAbsent=true&apiKey=105f2061e4de4572989bc0746b5c0807"
+              src="https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2Fbc59c3a832b6462397dd22811192263e"
               alt="Construction worker using ACC"
               className="object-contain grow w-full rounded-none aspect-[0.55] mt-[628px] max-md:mt-10 max-md:max-w-full"
             />
@@ -44,20 +44,7 @@ const GuaranteedImprovement: React.FC = () => {
           <div className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
             <FadeInSection>
             <p className="mt-40 text-3xl text-center text-white max-md:mt-10 max-md:max-w-full ar-one-sans">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est
-              laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            We are committed to continuously improving air-conditioned clothing® and seat technologies, aiming to spread them globally, significantly reduce the energy required for heat mitigation, contribute greatly to environmental improvement, and realize a healthier and more comfortable 'Physiological Cooler® society.
             </p>
             </FadeInSection>
           </div>
@@ -66,7 +53,7 @@ const GuaranteedImprovement: React.FC = () => {
             <FadeInSection>
             <img
               loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/971b6d5480d7fdd06c49bffb5cc7ed6733b2630b3891a79b6cf0a64cdb0ecebd?placeholderIfAbsent=true&apiKey=105f2061e4de4572989bc0746b5c0807"
+              src="https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2F134d763c27bf47ffa6b5038aac21a483"
               alt="ACC technology in use"
               className="object-contain w-full rounded-none aspect-[0.62] max-md:mt-10 max-md:max-w-full"
             />

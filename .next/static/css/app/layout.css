@@ -744,6 +744,9 @@ video {
 .object-cover {
   object-fit: cover;
 }
+.object-top {
+  object-position: top;
+}
 .px-16 {
   padding-left: 4rem;
   padding-right: 4rem;

@@ -23,17 +23,22 @@ const PathForBetterWork: React.FC = () => {
               <div className="flex flex-col self-end mt-48 mr-14 max-w-full text-5xl w-[369px] max-md:mt-10 max-md:mr-2.5 max-md:text-4xl">
                 <FadeInSection>
                 <p className="self-end max-md:text-4xl julius-sans">Patented Technology</p>
+                <img
+                src = "https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2Fff661357cf284e9788b3ad1e0c2e10f8" ></img>
                 </FadeInSection>
                 <FadeInSection>
                 <p className="self-start mt-[471px] max-md:mt-10 max-md:text-4xl julius-sans">
                   DETACHABLE/Washable <br /> fans
                 </p>
+                <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2Fa1f4f9278491485b8297eba6db4fc594"
+                ></img>
                 </FadeInSection>
-                <FadeInSection>
+                {/* <FadeInSection>
                 <p className="self-center mt-96 max-md:mt-10 max-md:text-4xl julius-sans">
                   OPTIMAL COOLING
                 </p>
-                </FadeInSection>
+                </FadeInSection> */}
               </div>
             </div>
           </div>
@@ -51,6 +56,9 @@ const PathForBetterWork: React.FC = () => {
               <p className="self-start text-5xl text-center text-white max-md:text-4xl julius-sans">
                 Accelerates <br /> Sweat Evaporation
               </p>
+              <img
+              src = "https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2F5b9fcdefc01e4e6bada454517973f56a"
+              ></img>
               </FadeInSection>
               
               <div className="flex flex-col pl-1.5 mt-96 w-full max-md:mt-10 max-md:max-w-full">
@@ -58,6 +66,9 @@ const PathForBetterWork: React.FC = () => {
                 <p className="self-start ml-3.5 text-5xl text-center text-white max-md:ml-2.5 max-md:text-4xl julius-sans">
                   ENHANCED AIRFLOW
                 </p>
+                <img
+                src = "https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2Fda27a00e857542c1a94b83cf81a4075d"
+                ></img>
                 </FadeInSection>
                 <div className="flex flex-wrap gap-10 mt-80 max-md:mt-10 max-md:max-w-full">
                   <div className="flex flex-col grow shrink-0 basis-0 w-fit max-md:max-w-full" />

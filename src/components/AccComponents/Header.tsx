@@ -14,10 +14,10 @@ const Header: React.FC = () => {
     <header className="flex relative z-10 flex-col items-center px-20 pt-80 pb-24 w-full text-8xl text-center text-white min-h-[1142px] max-md:px-5 max-md:py-24 max-md:max-w-full max-md:text-4xl LP-in">
       <img
         loading="lazy"
-        // src = "https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2F5ee5b1ead78848c28a073da7cb755dc5"
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/6960585d5e85a328c7d1b40e9474c4c07da87cb60aa6d7fca094249b5fdcdb5d?placeholderIfAbsent=true&apiKey=105f2061e4de4572989bc0746b5c0807"
+        src = "https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2Fd48b4ad7001a4ee4b65bf690b88a8f58"
+        // src="https://cdn.builder.io/api/v1/image/assets/TEMP/6960585d5e85a328c7d1b40e9474c4c07da87cb60aa6d7fca094249b5fdcdb5d?placeholderIfAbsent=true&apiKey=105f2061e4de4572989bc0746b5c0807"
         alt=""
-        className="object-cover absolute inset-0 size-full"
+        className="object-cover object-top absolute inset-0 size-full"
       />
       <FadeInSection>
       <h1 className="relative pr-0 mb-0 max-w-full w-[740px] max-md:mb-2.5 max-md:max-w-full max-md:text-4xl julius-sans Appear-in-1">
