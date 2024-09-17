@@ -10,8 +10,9 @@ const Header: React.FC = () => {
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
     </style>
-
+    
     <header className="flex relative z-10 flex-col items-center px-20 pt-80 pb-24 w-full text-8xl text-center text-white min-h-[1142px] max-md:px-5 max-md:py-24 max-md:max-w-full max-md:text-4xl LP-in">
+
       <img
         loading="lazy"
         src = "https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2Fd48b4ad7001a4ee4b65bf690b88a8f58"
@@ -19,6 +20,7 @@ const Header: React.FC = () => {
         alt=""
         className="object-cover object-top absolute inset-0 size-full"
       />
+      
       <FadeInSection>
       <h1 className="relative pr-0 mb-0 max-w-full w-[740px] max-md:mb-2.5 max-md:max-w-full max-md:text-4xl julius-sans Appear-in-1">
       Cool Down, Power UP.
