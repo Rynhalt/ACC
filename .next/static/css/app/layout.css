@@ -686,6 +686,9 @@ video {
 .mb-8 {
   margin-bottom: 2rem;
 }
+.mt-8 {
+  margin-top: 2rem;
+}
 .block {
   display: block;
 }
@@ -892,6 +895,10 @@ video {
 }
 .bg-transparent {
   background-color: transparent;
+}
+.bg-gray-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 .bg-opacity-20 {
   --tw-bg-opacity: 0.2;

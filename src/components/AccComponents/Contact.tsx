@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../../app/globals.css";
 import FadeInSection from "./FadeInSection";
 
@@ -9,6 +9,25 @@ const Contact: React.FC = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [typingIndex, setTypingIndex] = useState(0);
+
+  const defaultMessage = "Hello! I'm interested in learning more about BreezeWear...";
+
+  useEffect(() => {
+    setTypingIndex(0);
+    setMessage("");
+  }, []);
+
+  useEffect(() => {
+    if (typingIndex < defaultMessage.length) {
+      const typingTimer = setTimeout(() => {
+        setMessage(prevMessage => prevMessage + defaultMessage[typingIndex]);
+        setTypingIndex(prevIndex => prevIndex + 1);
+      }, 50);
+
+      return () => clearTimeout(typingTimer);
+    }
+  }, [typingIndex]);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -27,6 +46,7 @@ const Contact: React.FC = () => {
         setName("");
         setEmail("");
         setMessage("");
+        setTypingIndex(0);
       } else {
         alert('Failed to send message. Please try again.');
       }
@@ -52,8 +72,9 @@ const Contact: React.FC = () => {
                 name="name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="w-full px-3 py-2 text-black rounded ar-one-sans"
+                className="w-full px-3 py-2 text-black bg-gray-300 rounded ar-one-sans"
                 required
+                placeholder="Your Name"
               />
             </div>
             <div className="mb-4">
@@ -64,8 +85,9 @@ const Contact: React.FC = () => {
                 name="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full px-3 py-2 text-black rounded ar-one-sans"
+                className="w-full px-3 py-2 text-black bg-gray-300 rounded ar-one-sans"
                 required
+                placeholder="your.email@example.com"
               />
             </div>
             <div className="mb-4">
@@ -76,7 +98,7 @@ const Contact: React.FC = () => {
                 rows={4}
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                className="w-full px-3 py-2 text-black rounded ar-one-sans"
+                className="w-full px-3 py-2 text-black bg-gray-300 rounded ar-one-sans"
                 required
               ></textarea>
             </div>
@@ -87,7 +109,14 @@ const Contact: React.FC = () => {
               Send Message
             </button>
           </form>
+          <div className="mt-8 text-center ar-one-sans">
+            <p>Email: info@breezewear.com</p>
+            <p>Phone: (123) 456-7890</p>
+          </div>
         </FadeInSection>
+        
+          
+        
       </div>
     </section>
   );

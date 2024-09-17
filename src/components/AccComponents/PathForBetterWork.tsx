@@ -32,7 +32,7 @@ const PathForBetterWork: React.FC = () => {
                 </FadeInSection>
                 <FadeInSection>
                 <p  className="self-start mt-[271px] max-md:mt-10 max-md:text-4xl julius-sans">
-                  DETACHABLE/Washable <br /> fans
+                  DETACHABLE/<br></br>Washable <br /> fans
                 </p>
                 <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2Fa1f4f9278491485b8297eba6db4fc594"
