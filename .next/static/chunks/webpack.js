@@ -192,7 +192,7 @@
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "2c00a43df9a8c52a"; }
+/******/ 		__webpack_require__.h = function() { return "9014ac57ccacbb27"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -1408,17 +1408,3 @@
 /******/ 	
 /******/ })()
 ;
-;
-/* Builder Devtools (Webpack) */
-(() => {
-  if (typeof document !== "undefined") {
-    let devToolsScript = document.head.querySelector("script[data-builder-dev-tools]");
-    if (!devToolsScript) {
-      devToolsScript = document.createElement("script");
-      devToolsScript.setAttribute("src", "http://localhost:5273/~builder-dev-tools.js");
-      devToolsScript.setAttribute("data-builder-dev-tools", "");
-      devToolsScript.setAttribute("async", "");
-      document.head.appendChild(devToolsScript);
-    }
-  }
-})();

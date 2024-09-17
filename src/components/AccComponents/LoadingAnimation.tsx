@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from 'react';
 
-const LoadingAnimation: React.FC<{ companyName: string }> = ({ companyName }) => {
+
+interface LoadingAnimationProps {
+  companyName: string;
+  onAnimationComplete: () => void;
+}
+
+const LoadingAnimation: React.FC<LoadingAnimationProps> = ({ companyName, onAnimationComplete }) => {
   const [visible, setVisible] = useState(false);
   const [letters, setLetters] = useState<string[]>([]);
 
@@ -8,11 +14,11 @@ const LoadingAnimation: React.FC<{ companyName: string }> = ({ companyName }) =>
     setVisible(true);
     setLetters(companyName.split(''));
     const timer = setTimeout(() => {
-      // Animation complete logic here
+      onAnimationComplete();
     }, 3000); // Adjust timing as needed
 
     return () => clearTimeout(timer);
-  }, [companyName]);
+  }, [companyName, onAnimationComplete]);
 
   return (
     <div className={`fixed inset-0 flex items-center justify-center bg-black transition-opacity duration-1000 ${visible ? 'opacity-100' : 'opacity-0'}`}>
