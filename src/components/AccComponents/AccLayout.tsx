@@ -3,11 +3,13 @@ import React, { useEffect, useState } from "react";
 import Contact from "./Contact";
 import GuaranteedImprovement from "./GuaranteedImprovement";
 import Header from "./Header";
+import LoadingAnimation from "./LoadingAnimation";
 import PathForBetterWork from "./PathForBetterWork";
 import WhatIsAcc from "./WhatIsAcc";
 
 const AccLayout: React.FC = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const checkIsMobile = () => {
@@ -17,8 +19,20 @@ const AccLayout: React.FC = () => {
     checkIsMobile();
     window.addEventListener('resize', checkIsMobile);
 
-    return () => window.removeEventListener('resize', checkIsMobile);
+    // Simulate loading time
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 3000); // Adjust this value to control how long the animation shows
+
+    return () => {
+      window.removeEventListener('resize', checkIsMobile);
+      clearTimeout(timer);
+    };
   }, []);
+
+  if (isLoading) {
+    return <LoadingAnimation companyName="BREEZEWEAR" />;
+  }
 
   return (
     <html lang="en">
