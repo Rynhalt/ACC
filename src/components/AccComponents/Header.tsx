@@ -75,8 +75,8 @@ const Header: React.FC = () => {
         />
         
         <FadeInSection>
-          <h1 className="relative pr-0 mb-0 max-w-full w-[740px] text-2xl sm:text-4xl md:text-6xl lg:text-8xl julius-sans Appear-in-1">
-            Cool Down, Power UP.
+          <h1 className="relative pr-0 mb-0 max-w-full w-[740px] text-5xl sm:text-4xl md:text-6xl lg:text-8xl julius-sans Appear-in-1">
+            Cool Down, <br></br> Power UP.
           </h1>
         </FadeInSection>
       </header>
