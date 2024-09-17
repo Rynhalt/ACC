@@ -28,6 +28,10 @@ const AccLayout: React.FC = () => {
         <meta name="description" content="Experience the future of comfort with BreezeWear. Our innovative air-conditioned clothing keeps you cool in extreme heat, perfect for construction and outdoor work." />
         <meta property="og:title" content="BreezeWear - Stay Cool, Work Better" />
         <meta property="og:description" content="Discover BreezeWear: Advanced air-conditioned clothing for ultimate comfort in challenging work environments." />
+        <meta property="og:image" content="https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2F2c5a08ef043740ccb80bb67a906e2274" />
+        <meta property="og:image:alt" content="BreezeWear air-conditioned clothing in action" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://regalcore.org" />
         <style>{`
           @media (max-width: 767px) {
             html {
