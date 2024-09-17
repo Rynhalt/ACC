@@ -57,7 +57,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section className="bg-black text-white py-16">
+    <section id="contact" className="bg-black text-white py-16">
       <div className="container mx-auto px-4">
         <FadeInSection>
           <h2 className="text-4xl font-bold mb-8 text-center ar-one-sans">Contact Us</h2>
@@ -110,8 +110,9 @@ const Contact: React.FC = () => {
             </button>
           </form>
           <div className="mt-8 text-center ar-one-sans">
-            <p>Email: info@breezewear.com</p>
+            <p>Email: info@regalcore.org</p>
             <p>Phone: (123) 456-7890</p>
+            <p>Location: Imonmitake Building 2F 1-20-1,<br /> Shibuya, Shibuya-ku, Tokyo, Japan 150-0002</p>
           </div>
         </FadeInSection>
         

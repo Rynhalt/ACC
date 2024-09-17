@@ -9,7 +9,7 @@ const WhatIsAcc: React.FC = () => {
       @import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400..700&display=swap');
     </style>
 
-    <section className="z-10 px-6 w-full bg-black max-md:px-5 max-md:max-w-full">
+    <section id="what-is-acc" className="z-10 px-6 w-full bg-black max-md:px-5 max-md:max-w-full">
       <div className="flex gap-5 max-md:flex-col">
         <div className="flex flex-col w-2/5 max-md:ml-0 max-md:w-full">
           <div className="flex flex-col self-stretch my-auto text-center text-white max-md:mt-10 max-md:max-w-full">

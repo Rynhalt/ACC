@@ -10,7 +10,7 @@ const GuaranteedImprovement: React.FC = () => {
     @import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400..700&display=swap');
     </style>
 
-    <section className="flex flex-col items-center px-20 pt-32 pb-72 mt-0 w-full bg-sky-300 max-md:px-5 max-md:py-24 max-md:max-w-full">
+    <section id="testimonials" className="flex flex-col items-center px-20 pt-32 pb-72 mt-0 w-full bg-sky-300 max-md:px-5 max-md:py-24 max-md:max-w-full">
       <FadeInSection>
       <h2 className="z-10 ml-12 text-8xl text-center text-white max-md:max-w-full max-md:text-4xl julius-sans">
       Cool Technology,<br />  Real Results.
