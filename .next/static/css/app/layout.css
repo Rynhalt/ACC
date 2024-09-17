@@ -532,6 +532,12 @@ video {
 .inset-0 {
   inset: 0px;
 }
+.right-20 {
+  right: 5rem;
+}
+.top-20 {
+  top: 5rem;
+}
 .z-10 {
   z-index: 10;
 }
@@ -782,6 +788,9 @@ video {
 }
 .text-center {
   text-align: center;
+}
+.text-right {
+  text-align: right;
 }
 .text-3xl {
   font-size: 1.875rem;
