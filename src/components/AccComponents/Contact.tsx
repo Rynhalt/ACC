@@ -113,6 +113,8 @@ const Contact: React.FC = () => {
             <p>Email: info@regalcore.org</p>
             <p>Phone: (123) 456-7890</p>
             <p>Location: Imonmitake Building 2F 1-20-1,<br /> Shibuya, Shibuya-ku, Tokyo, Japan 150-0002</p>
+            <br></br>
+            <p className="italic">Regal Core Co.,Ltd</p>
           </div>
         </FadeInSection>
         
