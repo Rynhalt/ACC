@@ -42,7 +42,7 @@ const LoadingAnimation: React.FC<LoadingAnimationProps> = ({ companyName, onAnim
         @keyframes zigZag {
           0% {
             opacity: 0;
-            transform: translateY(${props => props.index % 2 === 0 ? '-20px' : '20px'});
+            transform: translateY(var(--start-y));
           }
           100% {
             opacity: 1;
