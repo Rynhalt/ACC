@@ -25,6 +25,10 @@ const AccLayout: React.FC = () => {
       <div className="snap-always snap-center">
         <GuaranteedImprovement />
       </div>
+{/* 
+      <div className="snap-always snap-center">
+        <Test />
+      </div> */}
     </main>
   );
 };

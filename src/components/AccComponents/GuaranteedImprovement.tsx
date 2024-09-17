@@ -20,12 +20,22 @@ const GuaranteedImprovement: React.FC = () => {
       </h2>
       </FadeInSection>
       <FadeInSection>
+      
       <img
         loading="lazy"
         src="https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2Fa7a2225a348f474e843be348fb59e102"
         alt="Construction improvement illustration"
-        className="object-contain mt-0 ml-11 max-w-full rounded-none aspect-[0.72] w-[599px] max-md:mt-0"
+        className="object-contain mt-0 ml-11 max-w-full rounded-none aspect-[0.72] w-[500px] max-md:mt-0 max-md:w-[80%]"
       />
+            <p className=" text-2xl text-left text-white mt-10 max-md:mt-20 max-md:max-w-full ar-one-sans">
+            "BreezeWear keeps me cool, so <br></br> I can focus on what matters: <br></br> getting the job done."
+            </p>
+            <br></br>
+            <p className=" text-2xl text-right text-white max-md:mt-10 max-md:max-w-full ar-one-sans">
+            — 30 years old,  <br></br> Electrician
+            </p>
+
+
       </FadeInSection>
       <div className="self-end mt-32 mb-0 w-full max-w-[1717px] max-md:mt-10 max-md:mb-2.5 max-md:max-w-full">
         <div className="flex gap-5 max-md:flex-col">
@@ -38,6 +48,13 @@ const GuaranteedImprovement: React.FC = () => {
               alt="Construction worker using ACC"
               className="object-contain grow w-full rounded-none aspect-[0.55] mt-[628px] max-md:mt-10 max-md:max-w-full"
             />
+            <p className=" text-2xl text-left text-white max-md:mt-10 max-md:max-w-full ar-one-sans">
+            "BreezeWear helps me stay focused and energized, even in the toughest conditions." 
+            </p>
+            <br></br>
+            <p className=" text-2xl text-right text-white max-md:mt-10 max-md:max-w-full ar-one-sans">
+            — 26 years old,  <br></br>Construction Worker
+            </p>
             </FadeInSection>
           </div>
           
@@ -60,6 +77,13 @@ const GuaranteedImprovement: React.FC = () => {
               alt="ACC technology in use"
               className="object-contain w-full rounded-none aspect-[0.62] max-md:mt-10 max-md:max-w-full"
             />
+            <p className=" text-2xl text-left text-white mt-10 max-md:mt-20 max-md:max-w-full ar-one-sans">
+            "BreezeWear saved me when I was on the verge of quitting my job!"
+            </p>
+            <br></br>
+            <p className=" text-2xl text-right text-white max-md:mt-10 max-md:max-w-full ar-one-sans">
+            — 29 years old,  <br></br>Warehouse Worker
+            </p>
             </FadeInSection>
           </div>
           

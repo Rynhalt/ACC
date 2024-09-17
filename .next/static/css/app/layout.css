@@ -560,17 +560,20 @@ video {
 .mt-0 {
   margin-top: 0px;
 }
+.mt-10 {
+  margin-top: 2.5rem;
+}
 .mt-28 {
   margin-top: 7rem;
 }
 .mt-32 {
   margin-top: 8rem;
 }
-.mt-40 {
-  margin-top: 10rem;
-}
 .mt-48 {
   margin-top: 12rem;
+}
+.mt-56 {
+  margin-top: 14rem;
 }
 .mt-80 {
   margin-top: 20rem;
@@ -578,32 +581,14 @@ video {
 .mt-96 {
   margin-top: 24rem;
 }
-.mt-\[471px\] {
-  margin-top: 471px;
-}
-.mt-\[587px\] {
-  margin-top: 587px;
-}
-.mt-\[628px\] {
-  margin-top: 628px;
-}
-.mt-\[37px\] {
-  margin-top: 37px;
-}
-.mt-\[387px\] {
-  margin-top: 387px;
-}
 .mt-\[187px\] {
   margin-top: 187px;
 }
 .mt-\[271px\] {
   margin-top: 271px;
 }
-.mt-56 {
-  margin-top: 14rem;
-}
-.mt-10 {
-  margin-top: 2.5rem;
+.mt-\[628px\] {
+  margin-top: 628px;
 }
 .flex {
   display: flex;
@@ -654,8 +639,8 @@ video {
 .w-\[42\%\] {
   width: 42%;
 }
-.w-\[599px\] {
-  width: 599px;
+.w-\[500px\] {
+  width: 500px;
 }
 .w-\[740px\] {
   width: 740px;
@@ -686,6 +671,9 @@ video {
 }
 .basis-0 {
   flex-basis: 0px;
+}
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .snap-y {
   scroll-snap-type: y var(--tw-scroll-snap-strictness);
@@ -810,6 +798,10 @@ video {
 .text-right {
   text-align: right;
 }
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -820,10 +812,6 @@ video {
 }
 .text-8xl {
   font-size: 6rem;
-  line-height: 1;
-}
-.text-7xl {
-  font-size: 4.5rem;
   line-height: 1;
 }
 .text-white {
@@ -918,6 +906,32 @@ body {
   transform: none;
   visibility: visible;
 }
+
+/* parallax */
+.parallax-container {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.parallax-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2Fd48b4ad7001a4ee4b65bf690b88a8f58') center center / cover;
+  z-index: -1;
+}
+
+.parallax-content {
+  position: relative;
+  z-index: 1;
+  padding: 50px;
+  text-align: center;
+  color: white;
+}
+
 @media not all and (min-width: 768px) {
 
   .max-md\:mb-2\.5 {
@@ -942,6 +956,14 @@ body {
 
   .max-md\:mt-10 {
     margin-top: 2.5rem;
+  }
+
+  .max-md\:mt-20 {
+    margin-top: 5rem;
+  }
+
+  .max-md\:w-\[80\%\] {
+    width: 80%;
   }
 
   .max-md\:w-full {
@@ -969,10 +991,5 @@ body {
   .max-md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
-  }
-
-  .max-md\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 }
