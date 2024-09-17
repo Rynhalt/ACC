@@ -21,7 +21,7 @@ const Header: React.FC = () => {
       />
       <FadeInSection>
       <h1 className="relative pr-0 mb-0 max-w-full w-[740px] max-md:mb-2.5 max-md:max-w-full max-md:text-4xl julius-sans Appear-in-1">
-        A versatile air conditioning solution.
+      Cool Down, Power UP.
       </h1>
       </FadeInSection>
     </header>

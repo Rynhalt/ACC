@@ -16,7 +16,7 @@ const GuaranteedImprovement: React.FC = () => {
     <section className="flex flex-col items-center px-20 pt-32 pb-72 mt-0 w-full bg-sky-300 max-md:px-5 max-md:py-24 max-md:max-w-full">
       <FadeInSection>
       <h2 className="z-10 ml-12 text-8xl text-center text-white max-md:max-w-full max-md:text-4xl julius-sans">
-        A guaranteed <br /> Improvement <br /> in construction. <br />
+      Cool Technology,<br />  Real Results.
       </h2>
       </FadeInSection>
       <FadeInSection>
@@ -43,8 +43,11 @@ const GuaranteedImprovement: React.FC = () => {
           
           <div className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
             <FadeInSection>
-            <p className="mt-40 text-3xl text-center text-white max-md:mt-10 max-md:max-w-full ar-one-sans">
-            We are committed to continuously improving air-conditioned clothing® and seat technologies, aiming to spread them globally, significantly reduce the energy required for heat mitigation, contribute greatly to environmental improvement, and realize a healthier and more comfortable 'Physiological Cooler® society.
+            <h2 className="z-10 ml-12 text-8xl text-left text-white max-md:max-w-full max-md:text-4xl julius-sans">
+            Visions:
+            </h2>
+            <p className="mt-10 text-3xl text-right text-white max-md:mt-10 max-md:max-w-full ar-one-sans">
+            We are dedicated to advancing air-conditioned clothing technology, aiming for global adoption to significantly lower energy consumption for heat management. Our mission is to contribute to environmental sustainability and create a healthier, more comfortable world through innovative cooling solutions.
             </p>
             </FadeInSection>
           </div>

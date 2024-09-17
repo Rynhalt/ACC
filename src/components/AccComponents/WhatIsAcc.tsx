@@ -18,19 +18,20 @@ const WhatIsAcc: React.FC = () => {
           <div className="flex flex-col self-stretch my-auto text-center text-white max-md:mt-10 max-md:max-w-full">
             <FadeInSection>
             <h2 className="text-8xl max-md:max-w-full max-md:text-4xl julius-sans Appear-in-1">
-              What is ACC?
+            Why Choose BreezeWear?
             </h2>
             </FadeInSection>
             <FadeInSection>
             <p className="self-center mt-28 text-3xl max-md:mt-10 max-md:max-w-full ar-one-sans Appear-in-2">
-              Short for Air-conditioned clothing, ACC is a patented cooling
-              technology from Japan designed to ease the robust heat faced by
-              construction workers.
+              BreezeWear is a revolutionary, air-conditioned clothing technology from Japan. Built to tackle extreme heat, it uses advanced cooling systems to provide relief and comfort, especially for those working in tough environments like construction. Stay cool, stay productive.
+
+
             </p>
             </FadeInSection>
           </div>
         </div>
         <div className="flex flex-col ml-5 w-3/5 max-md:ml-0 max-md:w-full">
+        
           <img
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/a5d7ae75c0a721737c063e4f09eec4cd35bb70e399f23a742d6d868f59c51699?placeholderIfAbsent=true&apiKey=105f2061e4de4572989bc0746b5c0807"
