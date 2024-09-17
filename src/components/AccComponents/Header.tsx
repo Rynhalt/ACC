@@ -66,12 +66,12 @@ const Header: React.FC = () => {
         </div>
       )}
 
-      <header className="flex relative z-10 flex-col items-center px-4 sm:px-20 pt-40 sm:pt-80 pb-12 sm:pb-24 w-full text-4xl sm:text-8xl text-center text-white min-h-[600px] sm:min-h-[1142px] LP-in">
+      <header className="flex relative z-10 flex-col items-center px-4 sm:px-20 pt-40 sm:pt-80 pb-12 sm:pb-24 w-full text-4xl sm:text-8xl text-center text-white min-h-screen sm:min-h-[1142px] LP-in">
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2Fd48b4ad7001a4ee4b65bf690b88a8f58"
           alt=""
-          className="object-cover object-top absolute inset-0 size-full"
+          className="object-cover object-top absolute inset-0 w-full h-full"
         />
         
         <FadeInSection>
