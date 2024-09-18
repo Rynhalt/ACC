@@ -1,23 +1,11 @@
 'use client'
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "../../app/globals.css";
 import FadeInSection from "./FadeInSection";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const checkScreenSize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-
-    checkScreenSize();
-    window.addEventListener('resize', checkScreenSize);
-
-    return () => window.removeEventListener('resize', checkScreenSize);
-  }, []);
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -30,7 +18,19 @@ const Header: React.FC = () => {
   return (
     <>
       <style>
+        {`
         @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+        .menu-transition {
+          transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+          max-height: 0;
+          opacity: 0;
+          overflow: hidden;
+        }
+        .menu-open {
+          max-height: 300px;
+          opacity: 1;
+        }
+        `}
       </style>
       
       <nav className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center px-4 sm:px-6 py-4 bg-black bg-opacity-50">
@@ -41,30 +41,27 @@ const Header: React.FC = () => {
             className="h-8 sm:h-12 w-auto"
           />
         </Link>
-        {isMobile ? (
-          <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-white julius-sans">
-            {isMenuOpen ? 'Close' : 'Menu'}
-          </button>
-        ) : (
-          <div className="flex space-x-4 sm:space-x-6">
-            <NavLink onClick={() => scrollToSection('what-is-acc')}>About</NavLink>
-            <NavLink onClick={() => scrollToSection('how-it-works')}>How It Works</NavLink>
-            <NavLink onClick={() => scrollToSection('testimonials')}>Testimonials</NavLink>
-            <NavLink onClick={() => scrollToSection('contact')}>Contact</NavLink>
-          </div>
-        )}
+        <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-white julius-sans">
+          {isMenuOpen ? (
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          ) : (
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          )}
+        </button>
       </nav>
 
-      {isMobile && isMenuOpen && (
-        <div className="fixed top-16 left-0 right-0 bg-black bg-opacity-90 z-40">
-          <div className="flex flex-col items-center py-4">
-            <NavLink onClick={() => scrollToSection('what-is-acc')}>About</NavLink>
-            <NavLink onClick={() => scrollToSection('how-it-works')}>How It Works</NavLink>
-            <NavLink onClick={() => scrollToSection('testimonials')}>Testimonials</NavLink>
-            <NavLink onClick={() => scrollToSection('contact')}>Contact</NavLink>
-          </div>
+      <div className={`fixed top-16 right-4 bg-black bg-opacity-90 z-40 menu-transition ${isMenuOpen ? 'menu-open' : ''} rounded-lg shadow-lg`}>
+        <div className="flex flex-col items-start py-4 px-6">
+          <NavLink onClick={() => scrollToSection('what-is-acc')}>About</NavLink>
+          <NavLink onClick={() => scrollToSection('how-it-works')}>How It Works</NavLink>
+          <NavLink onClick={() => scrollToSection('testimonials')}>Testimonials</NavLink>
+          <NavLink onClick={() => scrollToSection('contact')}>Contact</NavLink>
         </div>
-      )}
+      </div>
 
       <header className="flex relative z-10 flex-col items-center px-4 sm:px-8 md:px-16 lg:px-20 pt-20 sm:pt-40 md:pt-60 lg:pt-80 pb-12 sm:pb-24 w-full text-2xl sm:text-4xl md:text-6xl lg:text-8xl text-center text-white min-h-screen sm:min-h-[1142px]">
         <img
