@@ -68,7 +68,7 @@ const BeforeAfter: React.FC = () => {
                 </svg>
               </div>
             </div>
-            <p className="text-right mt-2 text-sm sans-ar-one">
+            <p className="text-right mt-2 text-sm ar-one-sans">
                 *Data after 10 minutes of intense cardio
               </p>
           </FadeInSection>

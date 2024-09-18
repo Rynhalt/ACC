@@ -52,14 +52,14 @@ const GuaranteedImprovement: React.FC = () => {
               </FadeInSection>
             </div>
             <div className="w-full md:w-1/3">
-              <FadeInSection>
+              {/* <FadeInSection>
                 <h2 className="z-10 text-4xl sm:text-6xl md:text-8xl text-left text-white julius-sans">
                   Visions:
                 </h2>
                 <p className="mt-4 sm:mt-6 md:mt-10 text-xl sm:text-2xl md:text-3xl text-right text-white ar-one-sans">
                   We are dedicated to advancing air-conditioned clothing technology, aiming for global adoption to significantly lower energy consumption for heat management. Our mission is to contribute to environmental sustainability and create a healthier, more comfortable world through innovative cooling solutions.
                 </p>
-              </FadeInSection>
+              </FadeInSection> */}
             </div>
             <div className="w-full md:w-1/3 md:mt-[calc(100%-66.67%)]">
               <FadeInSection>
