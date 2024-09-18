@@ -11,7 +11,7 @@ const Contact: React.FC = () => {
   const [message, setMessage] = useState("");
   const [typingIndex, setTypingIndex] = useState(0);
 
-  const defaultMessage = "Hello! I'm interested in learning more about BreezeWear...";
+  const defaultMessage = "Hello! I'm interested in learning more about ACC...";
 
   useEffect(() => {
     setTypingIndex(0);

@@ -1,5 +1,6 @@
 'use client'
 import React, { useEffect, useState } from "react";
+import BeforeAfter from "./BeforeAfter";
 import Contact from "./Contact";
 import GuaranteedImprovement from "./GuaranteedImprovement";
 import Header from "./Header";
@@ -68,6 +69,9 @@ const AccLayout: React.FC = () => {
           </div>
           <div className={isMobile ? '' : 'snap-always snap-center'}>
             <PathForBetterWork />
+          </div>
+          <div className={isMobile ? '' : 'snap-always snap-center'}>
+            <BeforeAfter />
           </div>
           <div className={isMobile ? '' : 'snap-always snap-center'}>
             <GuaranteedImprovement />
