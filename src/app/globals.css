@@ -134,3 +134,18 @@ body {
   text-align: center;
   color: white;
 }
+
+/* Mobile-specific styles */
+@media (max-width: 767px) {
+  header h1 {
+    font-size: 3.0rem !important; /* Larger font size for mobile */
+    line-height: 1.6 !important;
+    width: 90%; /* Prevent text from touching screen edges */
+    text-align: center;
+    padding-top: 65%;
+  }
+
+  header h1 br {
+    display: none; /* Remove line break on mobile */
+  }
+}
