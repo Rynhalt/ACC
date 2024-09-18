@@ -60,7 +60,7 @@ const Contact: React.FC = () => {
     <section id="contact" className="bg-black text-white py-8 sm:py-16 md:py-20 lg:py-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <FadeInSection>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8 lg:mb-10 text-center ar-one-sans">Contact Us</h2>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8 lg:mb-10 text-center ar-one-sans">Experience it Now.</h2>
         </FadeInSection>
         <FadeInSection>
           <form className="max-w-lg mx-auto" onSubmit={handleSubmit}>

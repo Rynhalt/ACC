@@ -17,7 +17,7 @@ const PathForBetterWork: React.FC = () => {
             <div className="flex flex-col text-center text-white">
               <FadeInSection>
                 <h2 className="text-4xl sm:text-6xl lg:text-8xl julius-sans text-left">
-                  Why BreezeWear Works:
+                The Innovation Behind ACC:
                 </h2>
               </FadeInSection>
               <div className="flex flex-col mt-12 lg:mt-48 max-w-full text-3xl sm:text-4xl lg:text-5xl">
@@ -34,7 +34,7 @@ const PathForBetterWork: React.FC = () => {
                 <FadeInSection>
                   <div className="flex flex-col items-center mt-12 lg:mt-[271px]">
                     <p className="julius-sans mb-4 text-center">
-                      DETACHABLE/<br />Washable <br /> fans
+                      DETACHABLE/<br /> <br /> fans
                     </p>
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2Fa1f4f9278491485b8297eba6db4fc594"

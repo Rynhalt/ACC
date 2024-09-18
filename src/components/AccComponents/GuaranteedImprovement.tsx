@@ -12,7 +12,7 @@ const GuaranteedImprovement: React.FC = () => {
       <section id="testimonials" className="flex flex-col items-center px-4 sm:px-8 md:px-16 lg:px-20 pt-16 sm:pt-24 md:pt-32 pb-24 sm:pb-48 md:pb-72 w-full bg-sky-300">
         <FadeInSection>
           <h2 className="z-10 text-4xl sm:text-6xl md:text-8xl text-center text-white julius-sans">
-            Cool Technology,<br />  Real Results.
+            Real results <br />  from the field.
           </h2>
         </FadeInSection>
         <FadeInSection>
