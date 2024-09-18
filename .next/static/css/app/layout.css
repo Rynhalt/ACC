@@ -776,6 +776,9 @@ video {
 .self-stretch {
   align-self: stretch;
 }
+.overflow-hidden {
+  overflow: hidden;
+}
 .overflow-y-scroll {
   overflow-y: scroll;
 }
