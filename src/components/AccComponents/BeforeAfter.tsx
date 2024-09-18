@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import FadeInSection from './FadeInSection';
 
 const BeforeAfter: React.FC = () => {
-  const [revealPercentage, setRevealPercentage] = useState(50);
+  const [revealPercentage, setRevealPercentage] = useState(25);
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -39,9 +39,9 @@ const BeforeAfter: React.FC = () => {
         <h2 className="text-6xl font-bold text-center mb-12 julius-sans">Experience the Cool:</h2>
         <div className="flex justify-center items-center">
           <FadeInSection>
-            <div ref={containerRef} className="relative w-96 h-96 cursor-ew-resize">
+            <div ref={containerRef} className="relative w-96 h-96  cursor-ew-resize">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2F1ac0e47ad3684f1b8e578e2fe315cb61"
+                src="https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2F42cefc6115aa4c14b4b88426302f95b5"
                 alt="After using the product"
                 className="absolute top-0 left-0 w-full h-full object-cover rounded-lg"
               />
@@ -50,7 +50,7 @@ const BeforeAfter: React.FC = () => {
                 style={{ clipPath: `inset(0 ${100 - revealPercentage}% 0 0)` }}
               >
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2F88f0102da2ad4d348e09a24cc9cf9e03"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2F1e6ad40f356f4abab7b1e119f3518d3b"
                   alt="Before using the product"
                   className="w-full h-full object-cover"
                 />
