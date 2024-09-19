@@ -2,6 +2,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import "../../app/globals.css";
+import { siteContent } from "../../content/siteContent";
 import FadeInSection from "./FadeInSection";
 
 const Header: React.FC = () => {
@@ -71,10 +72,9 @@ const Header: React.FC = () => {
 
       <div className={`fixed top-16 right-4 bg-black bg-opacity-90 z-40 menu-transition ${isMenuOpen ? 'menu-open' : ''} rounded-lg shadow-lg`}>
         <div className="flex flex-col items-start py-4 px-6">
-          <NavLink onClick={() => scrollToSection('what-is-acc')}>About</NavLink>
-          <NavLink onClick={() => scrollToSection('how-it-works')}>How It Works</NavLink>
-          <NavLink onClick={() => scrollToSection('testimonials')}>Testimonials</NavLink>
-          <NavLink onClick={() => scrollToSection('contact')}>Contact</NavLink>
+          {siteContent.header.navLinks.map((link, index) => (
+            <NavLink key={index} onClick={() => scrollToSection(link.section)}>{link.text}</NavLink>
+          ))}
         </div>
       </div>
 
@@ -88,7 +88,7 @@ const Header: React.FC = () => {
         
         <FadeInSection>
           <h1 className="relative pr-0 mb-0 max-w-full w-full sm:w-[740px] text-3xl sm:text-4xl md:text-5xl lg:text-8xl julius-sans Appear-in-1">
-            Cool Down, <br /> Power UP.
+            {siteContent.header.title}
           </h1>
         </FadeInSection>
       </header>
