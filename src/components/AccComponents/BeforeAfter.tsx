@@ -1,6 +1,6 @@
 'use client'
 import React, { useEffect, useRef, useState } from 'react';
-import FadeInSection from './FadeInSection';
+import FadeInSection from '../shared/FadeInSection';
 
 const BeforeAfter: React.FC = () => {
   const [revealPercentage, setRevealPercentage] = useState(25);

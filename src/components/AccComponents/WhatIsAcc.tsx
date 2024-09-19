@@ -1,7 +1,7 @@
 import React from "react";
 import { siteContent } from "../../content/siteContent";
+import FadeInSection from "../shared/FadeInSection";
 import SectionTitle from "../shared/SectionTitle";
-import FadeInSection from "./FadeInSection";
 
 const WhatIsAcc: React.FC = () => {
   const { title, description } = siteContent.whatIsAcc;

@@ -1,16 +1,16 @@
 'use client'
 import { siteContent } from "@/content/siteContent";
 import React, { useEffect, useState } from "react";
+import LoadingAnimation from "../shared/LoadingAnimation";
 import BeforeAfter from "./BeforeAfter";
 import Contact from "./Contact";
-import GuaranteedImprovement from "./GuaranteedImprovement";
+import PathForBetterWork from "./Features";
 import Header from "./Header";
-import LoadingAnimation from "./LoadingAnimation";
-import PathForBetterWork from "./PathForBetterWork";
+import Testimonial from "./Testimonial";
 import WhatIsAcc from "./WhatIsAcc";
 
 
-const AccLayout: React.FC = () => {
+const HomePage: React.FC = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [loadingState, setLoadingState] = useState<'loading' | 'fading' | 'complete'>('loading');
 
@@ -75,7 +75,7 @@ const AccLayout: React.FC = () => {
             <BeforeAfter />
           </div>
           <div className={isMobile ? '' : 'snap-always snap-center'}>
-            <GuaranteedImprovement />
+            <Testimonial />
           </div>
           <div className={isMobile ? '' : 'snap-always snap-center'}>
             <Contact />
@@ -86,4 +86,4 @@ const AccLayout: React.FC = () => {
   );
 };
 
-export default AccLayout;
+export default HomePage;

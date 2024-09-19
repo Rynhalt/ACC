@@ -1,5 +1,5 @@
 import React from 'react';
-import FadeInSection from '../AccComponents/FadeInSection';
+import FadeInSection from './FadeInSection';
 
 interface SectionTitleProps {
   title: string;

@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect, useState } from "react";
 import "../../app/globals.css";
-import FadeInSection from "./FadeInSection";
+import FadeInSection from "../shared/FadeInSection";
 
 // The actual email is SUPPOSED to be sent to slime123@bu.edu
 

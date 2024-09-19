@@ -1,7 +1,7 @@
-import AccLayout from "@/components/AccComponents/AccLayout";
+import HomePage from "@/components/AccComponents/HomePage";
 
 export default function Home() {
   return (
-    <AccLayout/>
+    <HomePage/>
   )
 }

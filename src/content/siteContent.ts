@@ -1,11 +1,11 @@
 export const siteContent = {
     meta: {
-      title: "BreezeWear - Revolutionary Air-Conditioned Clothing",
+      title: "ACC - Revolutionary Air-Conditioned Clothing",
       description: "Experience the future of comfort with BreezeWear. Our innovative air-conditioned clothing keeps you cool in extreme heat, perfect for construction and outdoor work.",
       ogTitle: "ACC - Stay Cool, Work Better",
-      ogDescription: "Discover BreezeWear: Advanced air-conditioned clothing for ultimate comfort in challenging work environments.",
+      ogDescription: "Discover ACCr: Advanced air-conditioned clothing for ultimate comfort in challenging work environments.",
       ogImage: "https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2F2c5a08ef043740ccb80bb67a906e2274",
-      ogImageAlt: "BreezeWear air-conditioned clothing in action",
+      ogImageAlt: "ACC air-conditioned clothing in action",
     },
     header: {
       title: "Cool Down, Power UP.",

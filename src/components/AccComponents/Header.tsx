@@ -3,7 +3,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import "../../app/globals.css";
 import { siteContent } from "../../content/siteContent";
-import FadeInSection from "./FadeInSection";
+import FadeInSection from "../shared/FadeInSection";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

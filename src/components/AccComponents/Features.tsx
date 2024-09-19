@@ -1,8 +1,8 @@
 'use client'
 import React from "react";
 import { siteContent } from "../../content/siteContent";
-import FadeInSection from "./FadeInSection";
-import ImageWithCaption from "./ImageWithCaption";
+import FadeInSection from "../shared/FadeInSection";
+import ImageWithCaption from "../shared/ImageWithCaption";
 
 const PathForBetterWork: React.FC = () => {
   const { title, sections } = siteContent.pathForBetterWork;
