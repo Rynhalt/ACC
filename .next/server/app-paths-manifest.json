@@ -1,5 +1,5 @@
 {
-  "/threejs-playground/page": "app/threejs-playground/page.js",
   "/page": "app/page.js",
-  "/[...page]/page": "app/[...page]/page.js"
+  "/[...page]/page": "app/[...page]/page.js",
+  "/threejs-playground/page": "app/threejs-playground/page.js"
 }
