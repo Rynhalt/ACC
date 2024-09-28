@@ -80,6 +80,13 @@ const HomePage: React.FC = () => {
           <div className={isMobile ? '' : 'snap-always snap-center'}>
             <Contact />
           </div>
+          {/* <div className={isMobile ? '' : 'snap-always snap-center'}>
+          <Link href="/threejs-playground">
+            <a className="block text-center py-4 bg-blue-500 text-white">
+              Go to Three.js Playground
+            </a>
+          </Link>
+          </div> */}
         </main>
       </div>
     </div>
