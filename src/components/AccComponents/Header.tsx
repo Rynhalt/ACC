@@ -49,12 +49,9 @@ const Header: React.FC = () => {
         `}
       </style>
       
-      <nav className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center px-4 sm:px-6 py-4 bg-black bg-opacity-50">
+      <nav className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center px-4 sm:px-6 py-4">
         <Link href="/">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2F4bb7ad5681e3475d9391d4917efd2a98"
-            alt="BreezeWear Logo"
-            className="h-8 sm:h-12 w-auto"
           />
         </Link>
         <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-white julius-sans">
