@@ -51,6 +51,54 @@ export const siteContent = {
             alt: "ACC technology in use",
           },
         },
+        {
+          quote: "ACC keeps me cool, so I can focus on what matters: getting the job done.",
+          author: "30 years old, Electrician",
+          image: {
+            src: "https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2Fa7a2225a348f474e843be348fb59e102",
+            alt: "Construction improvement illustration",
+          },
+        },
+        {
+          quote: "ACC helps me stay focused and energized, even in the toughest conditions.",
+          author: "26 years old, Construction Worker",
+          image: {
+            src: "https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2Fbc59c3a832b6462397dd22811192263e",
+            alt: "Construction worker using ACC",
+          },
+        },
+        {
+          quote: "ACC saved me when I was on the verge of quitting my job!",
+          author: "29 years old, Warehouse Worker",
+          image: {
+            src: "https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2F134d763c27bf47ffa6b5038aac21a483",
+            alt: "ACC technology in use",
+          },
+        },
+        {
+          quote: "ACC keeps me cool, so I can focus on what matters: getting the job done.",
+          author: "30 years old, Electrician",
+          image: {
+            src: "https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2Fa7a2225a348f474e843be348fb59e102",
+            alt: "Construction improvement illustration",
+          },
+        },
+        {
+          quote: "ACC helps me stay focused and energized, even in the toughest conditions.",
+          author: "26 years old, Construction Worker",
+          image: {
+            src: "https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2Fbc59c3a832b6462397dd22811192263e",
+            alt: "Construction worker using ACC",
+          },
+        },
+        {
+          quote: "ACC saved me when I was on the verge of quitting my job!",
+          author: "29 years old, Warehouse Worker",
+          image: {
+            src: "https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2F134d763c27bf47ffa6b5038aac21a483",
+            alt: "ACC technology in use",
+          },
+        }
       ],
     },
     beforeAfter: {

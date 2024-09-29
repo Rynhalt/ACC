@@ -1,6 +1,14 @@
 import React from "react";
 import FadeInSection from "./FadeInSection";
 
+// CSS-in-JS styles
+const styles = {
+  overflowWrapBreakWord: {
+    overflowWrap: 'break-word',
+    wordBreak: 'break-word', // This combines both previous classes
+  },
+};
+
 interface TestimonialImageProps {
   src: string;
   alt: string;
@@ -9,32 +17,30 @@ interface TestimonialImageProps {
   className?: string;
 }
 
-const TestimonialUser: React.FC<TestimonialImageProps> = ({ src, alt, quote, author, className = "" }) => {
+const TestimonialUser: React.FC<TestimonialImageProps> = ({
+  src,
+  alt,
+  quote,
+  author,
+  className = "",
+}) => {
   return (
     <FadeInSection>
-      <div className="flex flex-col max-w-[500px] mx-auto">
+      <div className="flex flex-col w-[400px] mx-auto h-screen">
         <img
           loading="lazy"
           src={src}
           alt={alt}
-          className={`object-contain rounded-none w-full ${className}`}
+          className={`object-cover rounded-none w-full h-4/5 ${className}`}
         />
-        <div className="mt-4 p-4 bg-sky-300">
-          <p className="text-xl sm:text-3xl text-left ar-one-sans text-white">
-            "{quote.split('<br />').map((line, index) => (
-              <React.Fragment key={index}>
-                {line}
-                {index < quote.split('<br />').length - 1 && <br className="hidden sm:inline" />}
-              </React.Fragment>
-            ))}"
+        <div className="w-full mt-0 p-4 bg-cyan-950 box-border h-1/5 overflow-auto">
+          <p 
+            className="text-base text-wrap sm:text-xl text-left ar-one-sans text-cyan-50 overflow-wrap-break-word"
+          >
+            "{quote}"
           </p>
-          <p className="text-xl sm:text-3xl text-right mt-4 ar-one-sans text-white">
-            — {author.split('<br />').map((line, index) => (
-              <React.Fragment key={index}>
-                {line}
-                {index < author.split('<br />').length - 1 && <br className="hidden sm:inline" />}
-              </React.Fragment>
-            ))}
+          <p className="text-base sm:text-xl text-right mt-4 ar-one-sans text-cyan-50">
+            — {author}
           </p>
         </div>
       </div>
