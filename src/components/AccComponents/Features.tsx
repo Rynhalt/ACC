@@ -13,31 +13,21 @@ const PathForBetterWork: React.FC = () => {
       @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
     </style>
 
-    <section id="how-it-works" className="flex flex-col px-4 sm:px-16 pt-12 sm:pt-24 pb-12 mt-0 w-full bg-sky-300">
+    <section id="how-it-works" className="flex flex-col px-4 sm:px-16 pt-12 sm:pt-24 pb-12 mt-0 w-full bg-sky-300 relative">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-5">
-          <div className="flex flex-col w-full lg:w-2/5">
-            <div className="flex flex-col text-center text-white">
+          <div className="flex flex-col w-full lg:w-2/5 sticky top-0 h-screen">
+            <div className="flex flex-col text-center text-white h-full justify-center">
               <FadeInSection>
                 <h2 className="text-4xl sm:text-6xl lg:text-8xl julius-sans text-left">
                   {title}
                 </h2>
               </FadeInSection>
-              <div className="flex flex-col mt-12 lg:mt-24 max-w-full">
-                {sections.slice(0, 3).map((section, index) => (
-                  <FadeInSection key={index}>
-                    <ImageWithCaption {...section} />
-                  </FadeInSection>
-                ))}
-              </div>
             </div>
           </div>
-          <div className="hidden lg:flex flex-col ml-5 w-[17%]">
-            {/* Placeholder for potential future content */}
-          </div>
-          <div className="flex flex-col w-full lg:w-[42%] lg:ml-5">
+          <div className="flex flex-col w-full lg:w-2/5 ml-auto">
             <div className="flex flex-col mt-12 lg:mt-24">
-              {sections.slice(3).map((section, index) => (
+              {sections.map((section, index) => (
                 <FadeInSection key={index}>
                   <ImageWithCaption {...section} />
                 </FadeInSection>
@@ -48,6 +38,11 @@ const PathForBetterWork: React.FC = () => {
       </div>
     </section>
     </>
+
+
+
+
+
   );
 };
 
