@@ -1,6 +1,14 @@
 import React from "react";
 import FadeInSection from "./FadeInSection";
 
+// CSS-in-JS styles
+const styles = {
+  overflowWrapBreakWord: {
+    overflowWrap: 'break-word',
+    wordBreak: 'break-word', // This combines both previous classes
+  },
+};
+
 interface TestimonialImageProps {
   src: string;
   alt: string;
@@ -18,34 +26,21 @@ const TestimonialUser: React.FC<TestimonialImageProps> = ({
 }) => {
   return (
     <FadeInSection>
-      <div className="flex flex-col max-w-[400px] mx-auto">
+      <div className="flex flex-col w-[400px] mx-auto h-screen">
         <img
           loading="lazy"
           src={src}
           alt={alt}
-          className={`object-cover rounded-none w-full h-[700px] ${className}`} // Increased height from 200px to 300px
+          className={`object-cover rounded-none w-full h-4/5 ${className}`}
         />
-        <div className="max-w-[400px] mt-4 p-4 bg-sky-50 box-border">
-          <p className="break-words text-xl sm:text-3xl text-left ar-one-sans text-black">
-            "{quote.split('<br />').map((line, index) => (
-              <React.Fragment key={index}>
-                {line}
-                {index < quote.split('<br />').length - 1 && (
-                  <br className="hidden sm:inline" />
-                )}
-              </React.Fragment>
-            ))}"
+        <div className="w-full mt-0 p-4 bg-cyan-950 box-border h-1/5 overflow-auto">
+          <p 
+            className="text-base text-wrap sm:text-xl text-left ar-one-sans text-cyan-50 overflow-wrap-break-word"
+          >
+            "{quote}"
           </p>
-          <p className="break-words text-xl sm:text-3xl text-right mt-4 ar-one-sans text-black">
-            —{" "}
-            {author.split('<br />').map((line, index) => (
-              <React.Fragment key={index}>
-                {line}
-                {index < author.split('<br />').length - 1 && (
-                  <br className="hidden sm:inline" />
-                )}
-              </React.Fragment>
-            ))}
+          <p className="text-base sm:text-xl text-right mt-4 ar-one-sans text-cyan-50">
+            — {author}
           </p>
         </div>
       </div>
