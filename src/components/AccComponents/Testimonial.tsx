@@ -1,10 +1,30 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { siteContent } from "../../content/siteContent";
 import FadeInSection from "../shared/FadeInSection";
 import TestimonialImage from "../shared/TestimonialUser";
 
 const Testimonial: React.FC = () => {
   const { title, testimonials } = siteContent.guaranteedImprovement;
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setScrollPosition((prevPosition) => {
+        const container = containerRef.current;
+        if (container) {
+          const newPosition = prevPosition + 1; // Adjust scroll speed here
+          if (newPosition > container.scrollWidth - container.clientWidth) {
+            return 0; // Reset to beginning when reaching the end
+          }
+          return newPosition;
+        }
+        return prevPosition;
+      });
+    }, 16); // Adjust interval for smoothness (e.g., 16ms for 60fps)
+
+    return () => clearInterval(intervalId);
+  }, []);
 
   return (
     <>
@@ -25,39 +45,27 @@ const Testimonial: React.FC = () => {
           </h2>
         </FadeInSection>
         
-        <div className="flex justify-center w-full">
-          <TestimonialImage
-            src={testimonials[0].image.src}
-            alt={testimonials[0].image.alt}
-            quote={testimonials[0].quote}
-            author={testimonials[0].author}
-            className="mt-8 sm:mt-12 max-w-full aspect-[0.72] w-full sm:w-[80%] md:w-[500px] mx-auto"
-          />
-        </div>
-
-        <div className="w-full mt-16 sm:mt-24 md:mt-32">
-          <div className="flex flex-col md:flex-row gap-8 md:gap-5">
-            <div className="w-full md:w-1/3">
+        <div 
+          ref={containerRef} 
+          className="flex justify-center w-full mt-16 sm:mt-24 md:mt-32 overflow-hidden"
+          style={{ whiteSpace: 'nowrap' }}
+        >
+          <div 
+            style={{ 
+              transform: `translateX(-${scrollPosition}px)`, 
+              display: 'inline-flex' 
+            }}
+          >
+            {testimonials.map((testimonial, index) => (
               <TestimonialImage
-                src={testimonials[1].image.src}
-                alt={testimonials[1].image.alt}
-                quote={testimonials[1].quote}
-                author={testimonials[1].author}
-                className="w-full aspect-[0.55]"
+                key={index}
+                src={testimonial.image.src}
+                alt={testimonial.image.alt}
+                quote={testimonial.quote}
+                author={testimonial.author}
+                className="w-1/3 aspect-[0.55] mx-2"
               />
-            </div>
-            <div className="w-full md:w-1/3">
-              {/* Commented out vision section */}
-            </div>
-            <div className="w-full md:w-1/3 md:mt-[calc(100%-66.67%)]">
-              <TestimonialImage
-                src={testimonials[2].image.src}
-                alt={testimonials[2].image.alt}
-                quote={testimonials[2].quote}
-                author={testimonials[2].author}
-                className="w-full aspect-[0.55]"
-              />
-            </div>
+            ))}
           </div>
         </div>
       </section>
