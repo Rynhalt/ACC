@@ -1276,6 +1276,14 @@ body {
 }
 @media (min-width: 1024px) {
 
+  .lg\:sticky {
+    position: sticky;
+  }
+
+  .lg\:top-0 {
+    top: 0px;
+  }
+
   .lg\:mb-10 {
     margin-bottom: 2.5rem;
   }
@@ -1298,6 +1306,10 @@ body {
 
   .lg\:flex {
     display: flex;
+  }
+
+  .lg\:h-screen {
+    height: 100vh;
   }
 
   .lg\:w-2\/5 {
