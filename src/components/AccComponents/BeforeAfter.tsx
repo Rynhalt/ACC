@@ -34,7 +34,7 @@ const BeforeAfter: React.FC = () => {
   }, []);
 
   return (
-    <section className="py-16 bg-sky-300">
+    <section className="py-16 bg-deepblue">
       <div className="container mx-auto px-4">
         <h2 className="text-6xl font-bold text-center mb-12 julius-sans">Proven to be cool:</h2>
         <div className="flex justify-center items-center">

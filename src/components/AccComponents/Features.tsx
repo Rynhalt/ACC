@@ -13,7 +13,7 @@ const PathForBetterWork: React.FC = () => {
       @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
     </style>
 
-    <section id="how-it-works" className="flex flex-col px-4 sm:px-16 pt-12 sm:pt-24 pb-12 mt-0 w-full bg-sky-300 relative">
+    <section id="how-it-works" className="flex flex-col px-4 sm:px-16 pt-12 sm:pt-24 pb-12 mt-0 w-full bg-deepblue relative">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-5">
           <div className="flex flex-col w-full lg:w-2/5 lg:sticky lg:top-0 lg:h-screen">
