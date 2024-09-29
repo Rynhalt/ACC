@@ -63,7 +63,6 @@ const Testimonial: React.FC = () => {
                 alt={testimonial.image.alt}
                 quote={testimonial.quote}
                 author={testimonial.author}
-                className="w-1/3 aspect-[0.55] mx-2"
               />
             ))}
           </div>
