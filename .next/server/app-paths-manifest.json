@@ -1,4 +1,3 @@
 {
-  "/model-animation/page": "app/model-animation/page.js",
-  "/[...page]/page": "app/[...page]/page.js"
+  "/model-animation/page": "app/model-animation/page.js"
 }

@@ -23,7 +23,7 @@ const Model = () => {
 
       const size = box.getSize(new THREE.Vector3());
       const maxDim = Math.max(size.x, size.y, size.z);
-      camera.position.set(0, maxDim / 2, maxDim * 1.5);
+      camera.position.set(0, maxDim / 2, maxDim * 1.1);
       camera.lookAt(0, 0, 0);
     }
   }, [camera]);
