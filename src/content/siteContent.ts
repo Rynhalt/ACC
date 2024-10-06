@@ -18,7 +18,7 @@ export const siteContent = {
     },
     whatIsAcc: {
       title: "What is ACC?",
-      description: "The Air-Conditioned Clothing (ACC) is a lightweight jacket with battery-powered fans that deliver consistent cooling. Designed for workers in hot extreme environments, it enhances comfort, focus, and efficiency, improving both productivity and job satisfaction.",
+      description: "The Air-Conditioned Clothing (ACC) is a lightweight jacket equipped with advanced battery-powered fans that provide continuous cooling, boosting efficiency while reducing fatigue, resulting in higher performance and overall job satisfaction in extreme heat.",
       image: {
         src: "https://cdn.builder.io/api/v1/image/assets/TEMP/a5d7ae75c0a721737c063e4f09eec4cd35bb70e399f23a742d6d868f59c51699?placeholderIfAbsent=true&apiKey=105f2061e4de4572989bc0746b5c0807",
         alt: "Air-conditioned clothing illustration",
@@ -124,43 +124,37 @@ export const siteContent = {
           title: "Patented Technology",
           imageSrc: "https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2Fff661357cf284e9788b3ad1e0c2e10f8",
           altText: "Patented Technology",
-          caption: "The patented technology integrates small yet powerful fans that draw in and circulate outside air within the garment. This airflow promotes continuous sweat evaporation, effectively lowering body temperature."
+          caption: "The patented technology incorporates compact, high-efficiency fans that pull in and circulate external air throughout the garment. This continuous airflow facilitates sweat evaporation, helping to regulate body temperature more effectively."
         },
         {
           title: "DETACHABLE fans",
           imageSrc: "https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2Fa1f4f9278491485b8297eba6db4fc594",
           altText: "Detachable/Washable fans",
-          caption: "The clothing features easily detachable fans, allowing for simple removal before washing the garment. The detachable design ensures maintenance is convenient and hassle-free, extending the garment's usability."
+          caption: "The garment is equipped with removable fans designed for effortless detachment prior to washing. This feature makes maintenance convenient, contributing to the garment's longevity and continued functionality."
         },
         {
           title: "Durability and Flexibility",
           imageSrc: "https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2F18ed4fceabb24d0d9091786061f7512e",
           altText: "Lightweight Design",
-          caption: "Designed for demanding environments, the clothing not only boosts cooling performance but also offers rugged durability. It's suitable for industries where maintaining worker efficiency is critical."
+          caption: "Designed for demanding environments, the garment ensures reliability, flexibly adapting to the movement of workers, even in industries that require high levels of mobility and productivity."
         },
         {
-          title: "Evaporative Cooling",
-          imageSrc: "https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2F5b9fcdefc01e4e6bada454517973f56a",
-          altText: "Accelerates Sweat Evaporation",
-          caption: "The clothing utilizes the natural process of sweat evaporation to cool the body. This process mimics the body's physiological cooling, addressing the limitation that humans lack a natural air circulation system. The continuous evaporation of sweat ensures the optimal cooling state for the wearer, helping prevent heat-related fatigue."
-        },
-        {
-          title: "ENHANCED AIRFLOW",
+          title: "Airflow Control",
           imageSrc: "https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2Fda27a00e857542c1a94b83cf81a4075d",
           altText: "Enhanced Airflow",
-          caption: "An adjustable cord inside the collar creates a directed air passage that maximizes cooling efficiency. This airflow, combined with the garment's design, helps regulate body temperature even in high-heat environments."
+          caption: "An adjustable cord within the collar directs airflow to maximize cooling efficiency. This design feature aids in regulating body temperature to ensure comfort and protection of workers even in high-temperature environments."
         },
         {
           title: "Effective Across Conditions",
           imageSrc: "https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2F26cd0483ef2e4a92a7ecb1f8f94d2d74",
           altText: "Rechargeable Battery",
-          caption: "The cooling effect varies based on environmental factors such as temperature and humidity, making it adaptable to diverse climates. The garment's design minimizes unnecessary sweating and reduces energy consumption, while providing consistent cooling based on the wearer's needs."
+          caption: "The cooling effect is adjustable to varying temperature and humidity. The garment’s design minimizes excessive perspiration, optimizes energy use, and provides consistent cooling that aligns with the wearer’s requirements."
         },
         {
           title: "Health and Energy Benefits",
           imageSrc: "https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2F90d1d8a7a9f04a58b3ea7bfbe1764c01",
           altText: "Adjustable Settings",
-          caption: "By maintaining an optimal skin surface cooling, the clothing reduces the risk of heat-related issues, such as dehydration, fatigue, and heat rash. It conserves energy by reducing unnecessary sweating, resulting in less physical strain and fewer breaks, thereby increasing overall work efficiency."
+          caption: "By maintaining optimal skin surface cooling, the clothing mitigates the risk of heat-related issues such as dehydration, fatigue, and heat rash. With reduced unnecessary perspiration, workers experience less physical strain, reducing the need for frequent breaks, and improving overall operational efficiency."
         }
       ]
     },
