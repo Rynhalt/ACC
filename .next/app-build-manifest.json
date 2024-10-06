@@ -1,47 +1,32 @@
 {
   "pages": {
-    "/_not-found/page": [
-      "static/chunks/webpack-de8016e33cf37458.js",
-      "static/chunks/fd9d1056-7f90b2943cf39a5b.js",
-      "static/chunks/23-e399558ff2499f3b.js",
-      "static/chunks/main-app-cc11a8a5305d3800.js",
-      "static/chunks/app/_not-found/page-46d5038fbaaea0d9.js"
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
     ],
     "/layout": [
-      "static/chunks/webpack-de8016e33cf37458.js",
-      "static/chunks/fd9d1056-7f90b2943cf39a5b.js",
-      "static/chunks/23-e399558ff2499f3b.js",
-      "static/chunks/main-app-cc11a8a5305d3800.js",
-      "static/css/27b4d6b789fddb24.css",
-      "static/css/fb0d5e8121e19af5.css",
-      "static/chunks/app/layout-aeafac009956d373.js"
-    ],
-    "/page": [
-      "static/chunks/webpack-de8016e33cf37458.js",
-      "static/chunks/fd9d1056-7f90b2943cf39a5b.js",
-      "static/chunks/23-e399558ff2499f3b.js",
-      "static/chunks/main-app-cc11a8a5305d3800.js",
-      "static/css/fb0d5e8121e19af5.css",
-      "static/chunks/459-96e99109f37bc0b8.js",
-      "static/chunks/app/page-99f4cc4025069fec.js"
-    ],
-    "/threejs-playground/page": [
-      "static/chunks/webpack-de8016e33cf37458.js",
-      "static/chunks/fd9d1056-7f90b2943cf39a5b.js",
-      "static/chunks/23-e399558ff2499f3b.js",
-      "static/chunks/main-app-cc11a8a5305d3800.js",
-      "static/chunks/b536a0f1-597b2a98048c9741.js",
-      "static/chunks/974-7b9c2d3e05df9005.js",
-      "static/chunks/app/threejs-playground/page-403aaa4ee72def94.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
     ],
     "/[...page]/page": [
-      "static/chunks/webpack-de8016e33cf37458.js",
-      "static/chunks/fd9d1056-7f90b2943cf39a5b.js",
-      "static/chunks/23-e399558ff2499f3b.js",
-      "static/chunks/main-app-cc11a8a5305d3800.js",
-      "static/css/ce55c2ee8ceee3ae.css",
-      "static/chunks/598-ee7a048ee908a5e1.js",
-      "static/chunks/app/[...page]/page-7124d62fcf057616.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/[...page]/page.css",
+      "static/chunks/app/[...page]/page.js"
+    ],
+    "/threejs-playground/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/threejs-playground/page.js"
+    ],
+    "/model-animation/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/model-animation/page.js"
     ]
   }
 }
