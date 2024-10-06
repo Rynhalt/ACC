@@ -77,13 +77,19 @@ const HeaderDemo: React.FC = () => {
         </div>
       </div>
 
-      <header className="flex relative z-10 flex-col items-center px-4 sm:px-8 md:px-16 lg:px-20 pt-20 sm:pt-40 md:pt-60 lg:pt-80 pb-12 sm:pb-24 w-full text-2xl sm:text-4xl md:text-6xl lg:text-8xl text-center text-white min-h-screen">
-        <ModelViewer /> {/* Ensure this is a self-closing tag */}
-        <FadeInSection>
-          <h1 className="relative pr-0 mb-0 max-w-full w-full sm:w-[740px] text-3xl sm:text-4xl md:text-5xl lg:text-8xl julius-sans Appear-in-1">
-            {siteContent.header.title}
-          </h1>
-        </FadeInSection>
+      <header className="flex relative z-10 flex-row items-center justify-between px-4 sm:px-8 md:px-16 lg:px-20 pt-20 sm:pt-40 md:pt-60 lg:pt-80 pb-12 sm:pb-24 w-full text-2xl sm:text-4xl md:text-6xl lg:text-8xl text-white min-h-screen">
+        <div className="flex-1 flex items-center justify-start">
+          <FadeInSection>
+            <h1 className="relative pr-0 mb-1 max-w-full w-full sm:w-[500px] text-3xl sm:text-4xl md:text-5xl lg:text-8xl julius-sans Appear-in-1">
+              {siteContent.header.title}
+            </h1>
+          </FadeInSection>
+        </div>
+        <div className="flex-1 flex justify-center items-center"> {/* Center the ModelViewer */}
+          <div className="max-w-lg w-full"> {/* Adjust max-width as needed */}
+            <ModelViewer /> {/* Ensure this is a self-closing tag */}
+          </div>
+        </div>
       </header>
     </>
   );
