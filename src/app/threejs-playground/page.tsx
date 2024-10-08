@@ -51,7 +51,7 @@ const Page: React.FC = () => {
         // Load the GLB model
         const loader = new GLTFLoader();
         loader.load(
-            'https://cdn.builder.io/o/assets%2F105f2061e4de4572989bc0746b5c0807%2F960f073c99d04c61bf9b7bc6a5599185?alt=media&token=e4028a40-6e60-4755-8450-6c66f9f8628f&apiKey=105f2061e4de4572989bc0746b5c0807',
+            'https://cdn.builder.io/o/assets%2F105f2061e4de4572989bc0746b5c0807%2F2450094cab3f4b1f95e013958d663249?alt=media&token=aba693b7-097a-41e9-be59-2e860f2af4f7&apiKey=105f2061e4de4572989bc0746b5c0807',
             (gltf) => {
                 const object = gltf.scene;
                 scene.add(object);
