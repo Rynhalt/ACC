@@ -11,7 +11,7 @@ const Model = () => {
 
   useFrame(() => {
     if (modelRef.current) {
-      modelRef.current.rotation.y += 0.01;
+      modelRef.current.rotation.y += 0.0070;
     }
   });
 
