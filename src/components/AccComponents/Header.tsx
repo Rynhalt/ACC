@@ -45,6 +45,12 @@ const Header: React.FC = () => {
           .header-gradient::after {
           }
         }
+        .header-gradient {
+          background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1));
+        }
+        .title-shadow {
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
         `}
       </style>
       
@@ -77,7 +83,7 @@ const Header: React.FC = () => {
       <header className="flex relative z-10 flex-col md:flex-row items-center justify-center px-4 sm:px-8 md:px-16 lg:px-20 pt-20 pb-0 w-full text-2xl sm:text-4xl md:text-6xl lg:text-8xl text-white min-h-screen header-gradient bg-black">
         <div className="flex-1 flex items-center justify-center mb-4 md:mb-0">
           <FadeInSection>
-            <h1 className="relative pr-0 mb-1 max-w-full w-full sm:w-[500px] text-3xl sm:text-4xl md:text-5xl lg:text-8xl julius-sans Appear-in-1">
+            <h1 className="relative pr-0 mb-1 max-w-full w-full sm:w-[500px] text-3xl sm:text-4xl md:text-5xl lg:text-8xl julius-sans Appear-in-1 title-shadow">
               {siteContent.header.title}
             </h1>
           </FadeInSection>
