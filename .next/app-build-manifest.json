@@ -23,6 +23,11 @@
       "static/chunks/main-app.js",
       "static/css/app/model-animation/page.css",
       "static/chunks/app/model-animation/page.js"
+    ],
+    "/threejs-playground/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/threejs-playground/page.js"
     ]
   }
 }

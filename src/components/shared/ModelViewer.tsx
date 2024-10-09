@@ -21,6 +21,8 @@ const Model = () => {
       const center = box.getCenter(new THREE.Vector3());
       modelRef.current.position.sub(center);
 
+      modelRef.current.rotation.y =  - Math.PI / 6; // 45 degrees in radians
+
       const size = box.getSize(new THREE.Vector3());
       const maxDim = Math.max(size.x, size.y, size.z);
       camera.position.set(0, maxDim / 2, maxDim * 1.1);
