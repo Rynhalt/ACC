@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import "../../app/globals.css";
 import { siteContent } from "../../content/siteContent";
 import FadeInSection from "../shared/FadeInSection";
+import ModelViewer from "../shared/ModelViewer"; // Import ModelViewer
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,12 +39,10 @@ const Header: React.FC = () => {
           right: 0;
           bottom: 0;
           height: 100%;
-          background: linear-gradient(to top, rgba(0,0,0,1.5) 10%, rgba(0,0,0,0) 50%);
           pointer-events: none;
         }
         @media (max-width: 767px) {
           .header-gradient::after {
-            background: linear-gradient(to top, rgba(0,0,0,1.5) 10%, rgba(0,0,0,0) 50%);
           }
         }
         `}
@@ -75,19 +74,19 @@ const Header: React.FC = () => {
         </div>
       </div>
 
-      <header className="flex relative z-10 flex-col items-center px-4 sm:px-8 md:px-16 lg:px-20 pt-20 sm:pt-40 md:pt-60 lg:pt-80 pb-12 sm:pb-24 w-full text-2xl sm:text-4xl md:text-6xl lg:text-8xl text-center text-white min-h-screen sm:min-h-[1142px] header-gradient">
-        <img
-          loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2Fd48b4ad7001a4ee4b65bf690b88a8f58"
-          alt=""
-          className="object-cover object-top absolute inset-0 w-full h-full"
-        />
-        
-        <FadeInSection>
-          <h1 className="relative pr-0 mb-0 max-w-full w-full sm:w-[740px] text-3xl sm:text-4xl md:text-5xl lg:text-8xl julius-sans Appear-in-1">
-            {siteContent.header.title}
-          </h1>
-        </FadeInSection>
+      <header className="flex relative z-10 flex-col md:flex-row items-center justify-center px-4 sm:px-8 md:px-16 lg:px-20 pt-20 pb-0 w-full text-2xl sm:text-4xl md:text-6xl lg:text-8xl text-white min-h-screen header-gradient bg-black">
+        <div className="flex-1 flex items-center justify-center mb-4 md:mb-0">
+          <FadeInSection>
+            <h1 className="relative pr-0 mb-1 max-w-full w-full sm:w-[500px] text-3xl sm:text-4xl md:text-5xl lg:text-8xl julius-sans Appear-in-1">
+              {siteContent.header.title}
+            </h1>
+          </FadeInSection>
+        </div>
+        <div className="flex-1 flex justify-center items-center">
+          <div className="max-w-lg w-full">
+            <ModelViewer /> {/* ModelViewer integrated here */}
+          </div>
+        </div>
       </header>
     </>
   );

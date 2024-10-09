@@ -40,12 +40,12 @@ const HeaderDemo: React.FC = () => {
           right: 0;
           bottom: 0;
           height: 100%;
-          background: linear-gradient(to top, rgba(0,0,0,1.5) 10%, rgba(0,0,0,0) 50%);
+          background: linear-gradient(to top, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 50%);
           pointer-events: none;
         }
         @media (max-width: 767px) {
           .header-gradient::after {
-            background: linear-gradient(to top, rgba(0,0,0,1.5) 10%, rgba(0,0,0,0) 50%);
+            background: linear-gradient(to top, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 50%);
           }
         }
         `}
