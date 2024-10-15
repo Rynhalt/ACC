@@ -1,6 +1,0 @@
-{
-  "/[...page]/page": "app/[...page]/page.js",
-  "/model-animation/page": "app/model-animation/page.js",
-  "/page": "app/page.js",
-  "/threejs-playground/page": "app/threejs-playground/page.js"
-}
