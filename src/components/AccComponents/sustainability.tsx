@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import {
     Bar,
     BarChart,
@@ -8,7 +8,7 @@ import {
     Tooltip,
     TooltipProps,
     XAxis,
-    YAxis,
+    YAxis
 } from 'recharts';
 
 // Define the type for your data
@@ -36,17 +36,9 @@ const Sustainability: React.FC = () => {
   // Define your data array with color properties
   const data: DataItem[] = [
     { name: 'ACC', cost: 0.38, info: 'Air Conditioned Clothing', color: 'green' },
-    { name: 'Car AC', cost: 6.41, info: 'Car Air Conditioning', color: 'orange' },
+    { name: 'Car AC', cost: 6.41, info: 'Car Air Conditioning', color: 'red' },
     { name: 'Central Air Conditioning', cost: 36.86, info: 'Central Air Conditioning', color: 'red' },
   ];
-
-  // State for animation
-  const [animationClass, setAnimationClass] = useState('');
-
-  useEffect(() => {
-    // Trigger animation on component mount
-    setAnimationClass('animate-charge-cycle');
-  }, []);
 
   return (
     <>
@@ -56,31 +48,14 @@ const Sustainability: React.FC = () => {
           @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
           /* Add animation styles */
-          .zoom-in {
-            animation: zoomIn 0.5s ease forwards;
+          .bar-shadow {
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
           }
 
-          @keyframes zoomIn {
-            from {
-              transform: scale(0.8);
-              opacity: 0;
-            }
-            to {
-              transform: scale(1);
-              opacity: 1;
-            }
-          }
-
-          .glow {
-            text-shadow: 0 0 5px rgba(255, 255, 0, 0.8), 0 0 10px rgba(255, 255, 0, 0.6);
-          }
-
-          .bar-animation {
-            transition: all 0.5s ease-in-out;
-          }
-
-          .bar-animation-acc {
-            transition: all 1s ease-in-out; /* Slower animation for ACC */
+          .bar-label {
+            fill: white; /* Label color */
+            font-size: 14px; /* Label font size */
+            text-anchor: middle; /* Center the text */
           }
         `}
       </style>
@@ -103,21 +78,28 @@ const Sustainability: React.FC = () => {
                   bottom: 5,
                 }}
               >
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="name" />
-                <YAxis />
+                <CartesianGrid strokeDasharray="3 3" stroke="#e0e0e0" />
+                <XAxis dataKey="name" fontFamily="'Open Sans', sans-serif" />
+                <YAxis fontFamily="'Open Sans', sans-serif" />
                 <Tooltip content={<CustomTooltip />} />
                 <Legend />
-                {/* Render Bars with animations */}
                 <Bar dataKey="cost" radius={[10, 10, 0, 0]}>
                   {data.map((entry, index) => (
                     <Cell 
                       key={`cell-${index}`} 
-                      fill={entry.color} 
-                      className={`bar-animation ${entry.name === 'ACC' ? 'bar-animation-acc' : ''}`} 
+                      fill={`url(#gradient-${index})`} 
+                      className="bar-shadow" 
                     />
                   ))}
                 </Bar>
+                <defs>
+                  {data.map((entry, index) => (
+                    <linearGradient id={`gradient-${index}`} key={index} x1="0%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" style={{ stopColor: entry.color, stopOpacity: 1 }} />
+                      <stop offset="100%" style={{ stopColor: '#ffffff', stopOpacity: 0.5 }} />
+                    </linearGradient>
+                  ))}
+                </defs>
               </BarChart>
             </div>
             <div className="info-container ml-4 julius-sans text-white">
@@ -125,14 +107,9 @@ const Sustainability: React.FC = () => {
                 The monthly electricity cost of Air Conditioned Clothing is approximately 
                 <span className="zoom-in glow">$0.38</span>, making it highly economical, even when used every day.
               </p>
-
               {data.map(item => (
                 <p key={item.name} className="open-sans text-center text-xl font-bold">{`${item.name}: $${item.cost} per month`}</p>
               ))}
-                {/* <p className="text-sm text-left mt-4">
-                Recommended device by the Public Interest Incorporated Association of the All Japan Electrical Construction Association (2016)
-                Received the Minister of the Environment Award for Global Warming Prevention Activities (2017)
-              </p> */}
               <p className="text-sm text-right mt-4">* Calculated based on 1 hour battery charge time and U.S. electricity rates.</p>
             </div>
           </div>

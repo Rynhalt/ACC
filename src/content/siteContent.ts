@@ -162,7 +162,7 @@ export const siteContent = {
       title: "Frequently Asked Questions",
       items: [
         {
-          question: "How does Regal Core’s air-conditioned clothing work?",
+          question: "How does air-conditioned clothing work?",
           answer: "Our clothing integrates built-in fans that circulate air around the body, accelerating sweat evaporation and helping maintain a comfortable temperature in hot environments."
         },
         {
@@ -192,10 +192,6 @@ export const siteContent = {
         {
           question: "Is the clothing washable?",
           answer: "Yes, the fans and batteries are detachable, and the garment itself is machine washable according to the care instructions provided."
-        },
-        {
-          question: "What industries is the clothing designed for?",
-          answer: "The clothing is ideal for industries that involve outdoor work or high temperatures, such as construction, logistics, utilities, agriculture, and manufacturing."
         },
         {
           question: "Can the clothing be worn under uniforms or other protective gear?",
