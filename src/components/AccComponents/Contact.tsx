@@ -9,6 +9,7 @@ const Contact: React.FC = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [company, setCompany] = useState(""); // State for company name
   const [typingIndex, setTypingIndex] = useState(0);
   const [isModalVisible, setIsModalVisible] = useState(false); // State to control modal visibility
 
@@ -39,7 +40,7 @@ const Contact: React.FC = () => {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ name, email, message, to: 'slime123@bu.edu' }),
+        body: JSON.stringify({ name, email, message, company, to: 'slime123@bu.edu' }),
       });
 
       if (response.ok) {
@@ -47,6 +48,7 @@ const Contact: React.FC = () => {
         setName("");
         setEmail("");
         setMessage("");
+        setCompany(""); // Clear company name after submission
         setTypingIndex(0);
         setIsModalVisible(false); // Hide modal after submission
       } else {
@@ -70,8 +72,72 @@ const Contact: React.FC = () => {
           </h2>
         </FadeInSection>
 
+        {/* Visible Contact Form */}
+        <div className="bg-black p-6 rounded-lg shadow-lg w-96 mx-auto">
+          <h3 className="text-xl font-bold mb-4 text-white">Contact Us</h3>
+          <form onSubmit={handleSubmit}>
+            <div className="mb-4">
+              <label htmlFor="name" className="block mb-2 text-sm text-white">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                className="w-full px-3 py-2 text-white bg-gray-700 rounded"
+                required
+                placeholder="Your Name"
+              />
+            </div>
+            <div className="mb-4">
+              <label htmlFor="email" className="block mb-2 text-sm text-white">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="w-full px-3 py-2 text-white bg-gray-700 rounded"
+                required
+                placeholder="your.email@example.com"
+              />
+            </div>
+            <div className="mb-4">
+              <label htmlFor="company" className="block mb-2 text-sm text-white">Company Name</label>
+              <input
+                type="text"
+                id="company"
+                name="company"
+                value={company}
+                onChange={(e) => setCompany(e.target.value)}
+                className="w-full px-3 py-2 text-white bg-gray-700 rounded"
+                required
+                placeholder="Your Company Name"
+              />
+            </div>
+            <div className="mb-4">
+              <label htmlFor="message" className="block mb-2 text-sm text-white">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows={4}
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                className="w-full px-3 py-2 text-white bg-gray-700 rounded"
+                required
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              className="w-full bg-white text-black px-6 py-2 rounded hover:bg-gray-200 transition-colors"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+
         {/* Modal */}
-        {isModalVisible && (
+        {/* {isModalVisible && (
           <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-75">
             <div className="bg-gray-800 p-6 rounded-lg shadow-lg w-96">
               <h3 className="text-xl font-bold mb-4">Contact Us</h3>
@@ -103,6 +169,19 @@ const Contact: React.FC = () => {
                   />
                 </div>
                 <div className="mb-4">
+                  <label htmlFor="company" className="block mb-2 text-sm">Company Name</label>
+                  <input
+                    type="text"
+                    id="company"
+                    name="company"
+                    value={company}
+                    onChange={(e) => setCompany(e.target.value)}
+                    className="w-full px-3 py-2 text-black bg-gray-300 rounded"
+                    required
+                    placeholder="Your Company Name"
+                  />
+                </div>
+                <div className="mb-4">
                   <label htmlFor="message" className="block mb-2 text-sm">Message</label>
                   <textarea
                     id="message"
@@ -129,7 +208,7 @@ const Contact: React.FC = () => {
               </button>
             </div>
           </div>
-        )}
+        )} */}
       </div>
     </section>
   );
