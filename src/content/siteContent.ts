@@ -162,20 +162,56 @@ export const siteContent = {
       title: "Frequently Asked Questions",
       items: [
         {
-          question: "What is ACC?",
-          answer: "ACC stands for Air-Conditioned Clothing, designed to keep you cool in extreme heat."
+          question: "How does Regal Core’s air-conditioned clothing work?",
+          answer: "Our clothing integrates built-in fans that circulate air around the body, accelerating sweat evaporation and helping maintain a comfortable temperature in hot environments."
         },
         {
-          question: "How does it work?",
-          answer: "The clothing uses battery-powered fans to circulate air and facilitate sweat evaporation."
+          question: "What materials are used in the clothing?",
+          answer: "We use lightweight, breathable, moisture-wicking fabrics that are both comfortable and durable, making them ideal for long hours in demanding environments. *The fabric is customizable for different working environments. Please contact us for further questions."
         },
         {
-          question: "Is it washable?",
-          answer: "Yes, the fans are detachable, making the clothing easy to wash."
+          question: "How customizable is ACC?",
+          answer: "The ACC highly customizable to meet the specific needs of different industries and work environments. From adjustable fan speeds and materials to size and design modifications, ACC can be tailored to ensure maximum comfort, durability, and performance. We offer flexibility in garment design, ensuring that each product is optimized for the unique challenges and requirements of your workforce, including branding options for company logos and colors."
         },
         {
-          question: "What sizes are available?",
-          answer: "We offer a range of sizes from S to XXL."
+          question: "How long does the battery last on a full charge?",
+          answer: "The battery life depends on fan settings and usage. For example, an 18V battery can provide 106 L/s of airflow for up to 5.1 hours, while a 6V battery can produce 39 L/s of airflow for over 24 hours. For more details, please contact our team."
+        },
+        {
+          question: "How heavy are the fans?",
+          answer: "The fans roughly weigh around 100g(0.22lbs) for a pair of fans. Two fans make up one jacket."
+        },
+        {
+          question: "Is the clothing comfortable to wear all day?",
+          answer: "Yes, our clothing is designed for maximum comfort, incorporating ergonomic materials that ensure freedom of movement while maintaining optimal cooling efficiency."
+        },
+        {
+          question: "Can the fan speed be adjusted?",
+          answer: "Yes, our clothing comes with adjustable fan speed settings so the wearer can control the level of cooling based on the environmental conditions. *Some versions of the product allow you to adjust the fan settings and monitor battery life via Bluetooth connectivity."
+        },
+        {
+          question: "Is the clothing washable?",
+          answer: "Yes, the fans and batteries are detachable, and the garment itself is machine washable according to the care instructions provided."
+        },
+        {
+          question: "What industries is the clothing designed for?",
+          answer: "The clothing is ideal for industries that involve outdoor work or high temperatures, such as construction, logistics, utilities, agriculture, and manufacturing."
+        },
+        {
+          question: "Can the clothing be worn under uniforms or other protective gear?",
+          answer: "Yes, the design is slim and lightweight, allowing it to be comfortably worn under standard uniforms or personal protective equipment."
+        },
+        {
+          question: "Is the cooling technology safe for workers?",
+          answer: "Our product is built with exceptionally low defect rates, ensuring reliable protection for workers. (See data for more)"
+        },
+        {
+          question: "How long does it take to charge the battery?",
+          answer: "The battery typically takes about 2-4 hours to fully charge, depending on the product type. Please contact our team for further information."
+        },
+        {
+          question: "How do I experience the ACC?",
+          answer: "You can request a demo directly contacting our team through our website or via email. We will then guide you through the process and tailor the solution to your specific needs."
         },
       ],
     },

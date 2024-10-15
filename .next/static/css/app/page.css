@@ -670,6 +670,15 @@ video {
 .h-screen {
   height: 100vh;
 }
+.max-h-0 {
+  max-height: 0px;
+}
+.max-h-40 {
+  max-height: 10rem;
+}
+.max-h-\[200px\] {
+  max-height: 200px;
+}
 .min-h-screen {
   min-height: 100vh;
 }
@@ -1001,6 +1010,11 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
 .duration-1000 {
   transition-duration: 1000ms;
 }
@@ -1010,8 +1024,14 @@ video {
 .duration-300 {
   transition-duration: 300ms;
 }
+.duration-500 {
+  transition-duration: 500ms;
+}
 .ease-out {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 :root {
