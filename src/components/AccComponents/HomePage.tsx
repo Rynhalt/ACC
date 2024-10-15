@@ -4,7 +4,6 @@ import React, { useEffect, useState } from "react";
 import LoadingAnimation from "../shared/LoadingAnimation";
 import BeforeAfter from "./BeforeAfter";
 import Contact from "./Contact";
-import FAQ from "./FAQ";
 import PathForBetterWork from "./Features";
 import Header from "./Header";
 import Testimonial from "./Testimonial";
@@ -84,9 +83,6 @@ const HomePage: React.FC = () => {
           </div>
           <div className={isMobile ? '' : 'snap-always snap-center'}>
             <Contact />
-          </div>
-          <div className={isMobile ? '' : 'snap-always snap-center'}>
-            <FAQ />
           </div>
         </main>
       </div>

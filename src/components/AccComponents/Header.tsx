@@ -75,7 +75,15 @@ const Header: React.FC = () => {
       <div className={`fixed top-16 right-4 bg-black bg-opacity-90 z-40 menu-transition ${isMenuOpen ? 'menu-open' : ''} rounded-lg shadow-lg`}>
         <div className="flex flex-col items-start py-4 px-6">
           {siteContent.header.navLinks.map((link, index) => (
-            <NavLink key={index} onClick={() => scrollToSection(link.section)}>{link.text}</NavLink>
+            link.type === "section" ? (
+              <button key={index} onClick={() => scrollToSection(link.section)} className="text-white hover:text-gray-300 transition-colors duration-200 julius-sans py-2">
+                {link.text}
+              </button>
+            ) : (
+              <Link key={index} href={link.section} className="text-white hover:text-gray-300 transition-colors duration-200 julius-sans py-2">
+                {link.text}
+              </Link>
+            )
           ))}
         </div>
       </div>
@@ -97,11 +105,5 @@ const Header: React.FC = () => {
     </>
   );
 };
-
-const NavLink: React.FC<{ onClick: () => void; children: React.ReactNode }> = ({ onClick, children }) => (
-  <button onClick={onClick} className="text-white hover:text-gray-300 transition-colors duration-200 julius-sans py-2">
-    {children}
-  </button>
-);
 
 export default Header;

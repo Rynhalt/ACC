@@ -10,10 +10,11 @@ export const siteContent = {
     header: {
       title: "Cool Down, Power UP.",
       navLinks: [
-        { text: "About", section: "what-is-acc" },
-        { text: "How It Works", section: "how-it-works" },
-        { text: "Testimonials", section: "testimonials" },
-        { text: "Contact", section: "contact" },
+        { text: "About", section: "what-is-acc", type: "section" },
+        { text: "How It Works", section: "how-it-works", type: "section" },
+        { text: "Testimonials", section: "testimonials", type: "section" },
+        { text: "Contact", section: "contact", type: "section" },
+        { text: "FAQ", section: "/faq", type: "page" } // This is a page link
       ],
     },
     whatIsAcc: {
