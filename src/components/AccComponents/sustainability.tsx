@@ -57,6 +57,17 @@ const Sustainability: React.FC = () => {
             font-size: 14px; /* Label font size */
             text-anchor: middle; /* Center the text */
           }
+
+          /* Add animation for the cost */
+          .cost-highlight {
+            color: #ffffff; /* Initial color */
+            text-shadow: 0 0 5px #ff0; /* Glow effect */
+            transition: color 0.5s ease; /* Smooth transition */
+          }
+
+          .cost-highlight:hover, .cost-highlight:focus {
+            color: #ff0; /* Change to yellow on hover */
+          }
         `}
       </style>
 
@@ -105,7 +116,7 @@ const Sustainability: React.FC = () => {
             <div className="info-container ml-4 julius-sans text-white">
               <p className="text-2xl sm:text-3xl mb-4">
                 The monthly electricity cost of Air Conditioned Clothing is approximately 
-                <span className="zoom-in glow">$0.38</span>, making it highly economical, even when used every day.
+                <span className="cost-highlight">$0.38</span>, making it highly economical, even when used every day.
               </p>
               {data.map(item => (
                 <p key={item.name} className="open-sans text-center text-xl font-bold">{`${item.name}: $${item.cost} per month`}</p>
