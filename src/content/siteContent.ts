@@ -158,5 +158,26 @@ export const siteContent = {
         }
       ]
     },
+    faq: {
+      title: "Frequently Asked Questions",
+      items: [
+        {
+          question: "What is ACC?",
+          answer: "ACC stands for Air-Conditioned Clothing, designed to keep you cool in extreme heat."
+        },
+        {
+          question: "How does it work?",
+          answer: "The clothing uses battery-powered fans to circulate air and facilitate sweat evaporation."
+        },
+        {
+          question: "Is it washable?",
+          answer: "Yes, the fans are detachable, making the clothing easy to wash."
+        },
+        {
+          question: "What sizes are available?",
+          answer: "We offer a range of sizes from S to XXL."
+        },
+      ],
+    },
     // Add more sections here
   };
