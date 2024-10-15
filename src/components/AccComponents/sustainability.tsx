@@ -23,8 +23,8 @@ interface DataItem {
 const CustomTooltip: React.FC<TooltipProps<number, string>> = ({ active, payload }) => {
   if (active && payload && payload.length) {
     return (
-      <div className="custom-tooltip bg-white p-2 border rounded shadow-lg">
-        <p>{`${payload[0].name}: $${payload[0].value} per month`}</p>
+      <div className="custom-tooltip bg-black text-white p-2 border rounded shadow-lg">
+        <p className="text-lg font-bold">{`${payload[0].name}: $${payload[0].value} per month`}</p>
         <p>{payload[0].payload.info}</p>
       </div>
     );
@@ -35,9 +35,9 @@ const CustomTooltip: React.FC<TooltipProps<number, string>> = ({ active, payload
 const Sustainability: React.FC = () => {
   // Define your data array with color properties
   const data: DataItem[] = [
-    { name: 'ACC', cost: 0.38, info: 'Calculated based on 1 hour battery charge time and U.S. electricity rates.', color: 'green' },
-    { name: 'Central Air Conditioning', cost: 36.86, info: 'Calculated based on 1 hour usage and U.S. electricity rates.', color: 'red' },
-    { name: 'Car AC', cost: 6.41, info: 'Calculated based on 1 hour usage and U.S. electricity rates.', color: 'red' },
+    { name: 'ACC', cost: 0.38, info: 'Air Conditioned Clothing', color: 'green' },
+    { name: 'Car AC', cost: 6.41, info: 'Car Air Conditioning', color: 'orange' },
+    { name: 'Central Air Conditioning', cost: 36.86, info: 'Central Air Conditioning', color: 'red' },
   ];
 
   // State for animation
@@ -51,8 +51,38 @@ const Sustainability: React.FC = () => {
   return (
     <>
       <style>
-        @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+        {`
+          @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+          /* Add animation styles */
+          .zoom-in {
+            animation: zoomIn 0.5s ease forwards;
+          }
+
+          @keyframes zoomIn {
+            from {
+              transform: scale(0.8);
+              opacity: 0;
+            }
+            to {
+              transform: scale(1);
+              opacity: 1;
+            }
+          }
+
+          .glow {
+            text-shadow: 0 0 5px rgba(255, 255, 0, 0.8), 0 0 10px rgba(255, 255, 0, 0.6);
+          }
+
+          .bar-animation {
+            transition: all 0.5s ease-in-out;
+          }
+
+          .bar-animation-acc {
+            transition: all 1s ease-in-out; /* Slower animation for ACC */
+          }
+        `}
       </style>
 
       <div className="sustainability-section flex flex-col px-4 sm:px-16 pt-12 sm:pt-24 pb-12 mt-0 w-full bg-deepblue relative">
@@ -78,19 +108,32 @@ const Sustainability: React.FC = () => {
                 <YAxis />
                 <Tooltip content={<CustomTooltip />} />
                 <Legend />
-                {/* Render a single Bar and assign colors dynamically using Cell */}
+                {/* Render Bars with animations */}
                 <Bar dataKey="cost" radius={[10, 10, 0, 0]}>
                   {data.map((entry, index) => (
-                    <Cell key={`cell-${index}`} fill={entry.color} />
+                    <Cell 
+                      key={`cell-${index}`} 
+                      fill={entry.color} 
+                      className={`bar-animation ${entry.name === 'ACC' ? 'bar-animation-acc' : ''}`} 
+                    />
                   ))}
                 </Bar>
               </BarChart>
             </div>
             <div className="info-container ml-4 julius-sans text-white">
-              <h3 className="text-3xl sm:text-4xl mb-4 text-right open-sans">Monthly Cost Comparison</h3>
+              <p className="text-2xl sm:text-3xl mb-4">
+                The monthly electricity cost of Air Conditioned Clothing is approximately 
+                <span className="zoom-in glow">$0.38</span>, making it highly economical, even when used every day.
+              </p>
+
               {data.map(item => (
-                <p key={item.name} className="open-sans text-right">{`${item.name}: $${item.cost} per month - ${item.info}`}</p>
+                <p key={item.name} className="open-sans text-center text-xl font-bold">{`${item.name}: $${item.cost} per month`}</p>
               ))}
+                {/* <p className="text-sm text-left mt-4">
+                Recommended device by the Public Interest Incorporated Association of the All Japan Electrical Construction Association (2016)
+                Received the Minister of the Environment Award for Global Warming Prevention Activities (2017)
+              </p> */}
+              <p className="text-sm text-right mt-4">* Calculated based on 1 hour battery charge time and U.S. electricity rates.</p>
             </div>
           </div>
         </div>
