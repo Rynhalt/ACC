@@ -112,13 +112,11 @@ const Sustainability: React.FC = () => {
               </BarChart>
             </div>
             <div className="info-container ml-4 julius-sans text-white">
-              <p className="text-2xl sm:text-3xl mb-4">
+              <p className="text-2xl sm:text-3xl mb-4 text-center">
                 The monthly electricity cost of Air Conditioned Clothing is approximately 
                 <span className="cost-highlight">$0.38</span>, making it highly economical, even when used every day.
               </p>
-              {data.map(item => (
-                <p key={item.name} className="open-sans text-center text-xl font-bold">{`${item.name}: $${item.cost} per month`}</p>
-              ))}
+
               <p className="text-sm text-right mt-4">* Calculated based on 1 hour battery charge time and U.S. electricity rates.</p>
             </div>
           </div>

@@ -26,15 +26,14 @@ const TestimonialUser: React.FC<TestimonialImageProps> = ({
 }) => {
   return (
     <FadeInSection>
-      <div className="flex flex-col w-[400px] mx-auto h-screen">
+      <div className="flex flex-col w-[400px] mx-auto h-[400px]">
         <img
           loading="lazy"
           src={src}
           alt={alt}
-          className={`object-cover rounded-none w-full h-4/5 ${className}`}
+          className={`object-cover rounded-none w-full h-[80%] ${className}`}
         />
-        {/* bg-cyan-950 */}
-        <div className="w-full mt-0 p-4 bg-black box-border h-1/5 overflow-auto">
+        <div className="w-full mt-0 p-4 bg-black box-border h-[20%] overflow-auto">
           <p 
             className="text-base text-wrap sm:text-xl text-left ar-one-sans text-cyan-50 overflow-wrap-break-word"
           >
