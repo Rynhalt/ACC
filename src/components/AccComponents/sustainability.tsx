@@ -24,7 +24,7 @@ const CustomTooltip: React.FC<TooltipProps<number, string>> = ({ active, payload
   if (active && payload && payload.length) {
     return (
       <div className="custom-tooltip bg-black text-white p-2 border rounded shadow-lg">
-        <p className="text-lg font-bold">{`${payload[0].name}: $${payload[0].value} per month`}</p>
+        <p className="text-lg font-bold">{`$${payload[0].value}`}</p>
         <p>{payload[0].payload.info}</p>
       </div>
     );

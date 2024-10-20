@@ -13,6 +13,9 @@ const config: Config = {
         foreground: "var(--foreground)",
         'deepblue': "#5AB2FF"
       },
+      fontFamily: {
+        block: ['block', 'sans-serif'], // Add your custom font here
+      },
     },
   },
   plugins: [],

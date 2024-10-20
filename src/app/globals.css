@@ -28,6 +28,8 @@ body {
   font-style: normal;
 }
 
+
+
 .ar-one-sans {
   font-family: "AR One Sans", system-ui;
   font-optical-sizing: auto;
@@ -156,4 +158,11 @@ body {
 
 .word-break-break-word {
   word-break: break-word;
+}
+
+@font-face {
+  font-family: 'block';
+  src: url('../fonts/Unitblock-JpJma.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
 }

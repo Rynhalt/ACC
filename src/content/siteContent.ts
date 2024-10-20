@@ -8,7 +8,7 @@ export const siteContent = {
       ogImageAlt: "ACC air-conditioned clothing in action",
     },
     header: {
-      title: "Air Conditioned Clothing",
+      title: "AIR CONDITIONED CLOTHING",
       navLinks: [
         { text: "About", section: "what-is-acc", type: "section" },
         { text: "How It Works", section: "how-it-works", type: "section" },
