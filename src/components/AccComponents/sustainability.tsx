@@ -4,7 +4,6 @@ import {
   BarChart,
   CartesianGrid,
   Cell,
-  Legend,
   Tooltip,
   TooltipProps,
   XAxis,
@@ -93,7 +92,6 @@ const Sustainability: React.FC = () => {
                 <XAxis dataKey="name" fontFamily="'Open Sans', sans-serif" />
                 <YAxis fontFamily="'Open Sans', sans-serif" />
                 <Tooltip content={<CustomTooltip />} />
-                <Legend />
                 <Bar dataKey="cost" radius={[10, 10, 0, 0]}>
                   {data.map((entry, index) => (
                     <Cell 
