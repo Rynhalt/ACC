@@ -26,14 +26,15 @@ const TestimonialUser: React.FC<TestimonialImageProps> = ({
 }) => {
   return (
     <FadeInSection>
-      <div className="flex flex-col w-[400px] mx-auto h-[400px]">
+      <div className="flex flex-col w-[400px] mx-auto h-[600px]">
         <img
           loading="lazy"
           src={src}
           alt={alt}
           className={`object-cover rounded-none w-full h-[80%] ${className}`}
+          style={{ objectPosition: 'top' }} // {{ edit_1 }} Added to crop from the top
         />
-        <div className="w-full mt-0 p-4 bg-black box-border h-[20%] overflow-auto">
+        <div className="w-full mt-0 p-4 bg-black box-border h-[400px] overflow-auto">
           <p 
             className="text-base text-wrap sm:text-xl text-left ar-one-sans text-cyan-50 overflow-wrap-break-word"
           >
