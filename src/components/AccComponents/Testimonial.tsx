@@ -33,7 +33,7 @@ const Testimonial: React.FC = () => {
         @import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400..700&display=swap');
       </style>
 
-      <section id="testimonials" className="flex flex-col items-center px-0 sm:px-0 md:px-0 lg:px-0 w-full bg-deepblue"> {/* Removed horizontal padding */}
+      <section id="testimonials" className="flex flex-col items-center px-0 sm:px-0 md:px-0 lg:px-0 w-full bg-black"> {/* Removed horizontal padding */}
         <FadeInSection>
           <h2 className="z-10 text-4xl sm:text-6xl md:text-8xl text-center text-white julius-sans">
             {title.split('<br/>').map((line, index) => (
@@ -47,7 +47,7 @@ const Testimonial: React.FC = () => {
         
         <div 
           ref={containerRef} 
-          className="flex justify-center w-full mt-16 sm:mt-24 md:mt-32 overflow-hidden"
+          className="flex justify-center w-full mt-32 sm:mt-24 md:mt-32 overflow-hidden" // Changed mt-16 to mt-32
           style={{ whiteSpace: 'nowrap' }}
         >
           <div 

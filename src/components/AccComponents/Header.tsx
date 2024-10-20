@@ -1,6 +1,6 @@
 'use client'
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../../app/globals.css";
 import { siteContent } from "../../content/siteContent";
 import FadeInSection from "../shared/FadeInSection";
@@ -8,6 +8,7 @@ import ModelViewer from "../shared/ModelViewer"; // Import ModelViewer
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const modelViewerRef = useRef<HTMLDivElement>(null); // Create a ref for the ModelViewer
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -16,6 +17,10 @@ const Header: React.FC = () => {
     }
     setIsMenuOpen(false);
   };
+
+  useEffect(() => {
+    // Removed scrolling to ModelViewer
+  }, []); // Empty dependency array to run once on mount
 
   return (
     <>
@@ -46,7 +51,11 @@ const Header: React.FC = () => {
           }
         }
         .header-gradient {
-          background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1));
+          // background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1));
+          background: url('https://cdn.builder.io/api/v1/image/assets%2F105f2061e4de4572989bc0746b5c0807%2Fcf7b8e282c86494988fd62be2cfdad21') no-repeat center center; /* Updated to use a stock photo */
+          background-size: cover; /* Ensures the image covers the entire area */
+          
+        }
         }
         .title-shadow {
           text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
@@ -88,19 +97,19 @@ const Header: React.FC = () => {
         </div>
       </div>
 
-      <header className="flex relative z-10 flex-col md:flex-row items-center justify-center px-4 sm:px-8 md:px-16 lg:px-20 pt-20 pb-0 w-full text-2xl sm:text-4xl md:text-6xl lg:text-8xl text-white min-h-screen header-gradient bg-black">
-        <div className="flex-1 flex items-center justify-center mb-4 md:mb-0">
+      <header className="flex relative z-10 flex-col items-center justify-center px-4 sm:px-8 md:px-16 lg:px-20 pt-10 pb-0 w-full text-2xl sm:text-4xl md:text-6xl lg:text-8xl text-white min-h-screen header-gradient bg-black">
+        <div className="flex-1 flex flex-col items-center mb-0 md:mb-0"> {/* Changed mb-4 to mb-0 */}
           <FadeInSection>
-            <h1 className="relative pr-0 mb-1 max-w-full w-full sm:w-[500px] text-3xl sm:text-4xl md:text-5xl lg:text-8xl julius-sans Appear-in-1 title-shadow">
+            <h1 className="relative pr-0 mt-24 mb-1 max-w-full w-full sm:w-[1000px] text-3xl sm:text-4xl md:text-5xl lg:text-6xl julius-sans Appear-in-1 title-shadow text-center">
               {siteContent.header.title}
             </h1>
           </FadeInSection>
         </div>
-        <div className="flex-1 flex justify-center items-center">
-          <div className="max-w-lg w-full">
-            <ModelViewer /> {/* ModelViewer integrated here */}
+        <div className="flex-1 flex justify-center items-center mt-[-20px] mb-24" > {/* Added margin-bottom to increase spacing below */}
+          <div className="max-w-lg w-full" ref={modelViewerRef}> {/* ModelViewer integrated here */}
+            <ModelViewer />
           </div>
-        </div>
+        </div> 
       </header>
     </>
   );

@@ -33,7 +33,8 @@ const TestimonialUser: React.FC<TestimonialImageProps> = ({
           alt={alt}
           className={`object-cover rounded-none w-full h-4/5 ${className}`}
         />
-        <div className="w-full mt-0 p-4 bg-cyan-950 box-border h-1/5 overflow-auto">
+        {/* bg-cyan-950 */}
+        <div className="w-full mt-0 p-4 bg-black box-border h-1/5 overflow-auto">
           <p 
             className="text-base text-wrap sm:text-xl text-left ar-one-sans text-cyan-50 overflow-wrap-break-word"
           >

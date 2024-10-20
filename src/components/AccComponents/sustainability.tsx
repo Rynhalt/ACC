@@ -1,14 +1,14 @@
 import React from 'react';
 import {
-    Bar,
-    BarChart,
-    CartesianGrid,
-    Cell,
-    Legend,
-    Tooltip,
-    TooltipProps,
-    XAxis,
-    YAxis
+  Bar,
+  BarChart,
+  CartesianGrid,
+  Cell,
+  Legend,
+  Tooltip,
+  TooltipProps,
+  XAxis,
+  YAxis
 } from 'recharts';
 
 // Define the type for your data
@@ -71,7 +71,7 @@ const Sustainability: React.FC = () => {
         `}
       </style>
 
-      <div className="sustainability-section flex flex-col px-4 sm:px-16 pt-12 sm:pt-24 pb-12 mt-0 w-full bg-deepblue relative">
+      <div className="sustainability-section flex flex-col px-4 sm:px-16 pt-12 sm:pt-24 pb-12 mt-0 w-full bg-black relative">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl sm:text-6xl lg:text-8xl julius-sans text-left text-white mb-8">
             Sustainability

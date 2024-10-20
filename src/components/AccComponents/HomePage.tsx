@@ -7,7 +7,6 @@ import Contact from "./Contact";
 import PathForBetterWork from "./Features";
 import Header from "./Header";
 import Testimonial from "./Testimonial";
-import WhatIsAcc from "./WhatIsAcc";
 import Sustainability from "./sustainability";
 
 
@@ -66,9 +65,9 @@ const HomePage: React.FC = () => {
           <div className={isMobile ? '' : 'snap-always snap-center'}>
             <Header />
           </div>
-          <div className={isMobile ? '' : 'snap-always snap-center'}>
+          {/* <div className={isMobile ? '' : 'snap-always snap-center'}>
             <WhatIsAcc />
-          </div>
+          </div> */}
           <div className={isMobile ? '' : 'snap-always snap-center'}>
             <PathForBetterWork />
           </div>

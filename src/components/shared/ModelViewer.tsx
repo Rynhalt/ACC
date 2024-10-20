@@ -35,7 +35,7 @@ const Model = () => {
 
 const ModelViewer: React.FC = () => {
   return (
-    <div style={{ width: '100%', height: '100vh' }}>
+    <div style={{ width: '100%', height: '80vh' }}>
       <Canvas
         camera={{ position: [0, 0, 5], fov: 75, near: 0.1, far: 1000 }}
       >
